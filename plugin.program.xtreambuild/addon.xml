@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.xtreambuild" name="Xtream Build Installer" version="1.0.0" provider-name="James1997s">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+    </requires>
+    <extension point="xbmc.python.script" library="default.py" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">One-click installer for the Xtream Playlist Kodi build.</summary>
+        <description lang="en_GB">Downloads and installs the branded Xtream Playlist Kodi build from the official GitHub repository. Includes the media-library addon, artwork, and configuration.</description>
+        <platform>all</platform>
+        <license>MIT</license>
+        <source>https://github.com/James1997s/xtream-playlist-manager</source>
+        <website>https://github.com/James1997s/xtream-playlist-manager</website>
+    </extension>
+</addon>

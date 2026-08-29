@@ -43,3 +43,15 @@ Because Xtream stream URLs normally contain account credentials, do not publish 
 | `build/plugin.video.xtreamplaylist-1.0.0.zip` | Kodi installation package |
 
 The original project notes remain in [`README.legacy.md`](README.legacy.md).
+
+## Xtream Kodi Build Installer
+
+The repository also contains a self-contained build installer addon at [`plugin.program.xtreambuild`](plugin.program.xtreambuild). The installer provides five actions: **Safe install / update**, **Full build install**, **Restore Kodi backup**, **Check latest build version**, and **Open project repository**.
+
+The safe mode installs or updates the Xtream addons and their bundled settings while preserving the rest of Kodi. The full mode creates a timestamped backup of important Kodi configuration and addon files first, then applies the build package and asks whether Kodi should restart. The restore option returns the latest selected backup and can restart Kodi to apply it.
+
+The build archive is [`build/xtream-kodi-build-1.0.0.zip`](build/xtream-kodi-build-1.0.0.zip). It contains both Kodi addons and the default Xtream playlist configuration. It does not silently replace personal credentials, accounts, databases, or unrelated Kodi data.
+
+### Build installer setup
+
+Install the build archive on a test Kodi profile first. After extracting the build, launch **Xtream Build Installer** from Kodi’s program addons and choose the installation mode. For a normal existing Kodi installation, start with **Safe install / update**. Use **Full build install** only after confirming that you want the build configuration applied and that a backup can be stored on the device.

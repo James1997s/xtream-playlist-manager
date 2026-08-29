@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <setting id="playlist_url">https://raw.githubusercontent.com/James1997s/xtream-playlist-manager/main/playlist.m3u</setting>
+    <setting id="cache_minutes">30</setting>
+</settings>

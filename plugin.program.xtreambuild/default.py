@@ -4,8 +4,13 @@ from __future__ import absolute_import, division, print_function, unicode_litera
 import json
 import os
 import time
+import traceback
 import zipfile
-from urllib.request import Request, urlopen
+try:
+    from urllib.request import Request, urlopen
+except ImportError:
+    Request = None
+    urlopen = None
 
 import xbmc
 import xbmcaddon
@@ -18,12 +23,20 @@ BUILD_URL = "https://raw.githubusercontent.com/James1997s/xtream-playlist-manage
 MANIFEST_URL = "https://raw.githubusercontent.com/James1997s/xtream-playlist-manager/main/build/xtream-kodi-build.json"
 
 
+def translate(path):
+    try:
+        return xbmcvfs.translatePath(path)
+    except AttributeError:
+        fallback_home = os.path.expanduser("~/.kodi/")
+        return path.replace("special://home/", fallback_home).replace("special://profile/", os.path.join(fallback_home, "userdata/"))
+
+
 def home():
-    return xbmcvfs.translatePath("special://home/")
+    return translate("special://home/")
 
 
 def profile():
-    path = xbmcvfs.translatePath(ADDON.getAddonInfo("profile"))
+    path = translate(ADDON.getAddonInfo("profile"))
     if not os.path.isdir(path):
         os.makedirs(path)
     return path
@@ -156,4 +169,12 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as exc:
+        details = "%s: %s" % (type(exc).__name__, exc)
+        xbmc.log("Xtream Build Installer fatal error: %s\n%s" % (details, traceback.format_exc()), xbmc.LOGERROR)
+        try:
+            xbmcgui.Dialog().ok(TITLE, "Installer error", details, "Open Kodi's log for the full traceback.")
+        except Exception:
+            pass

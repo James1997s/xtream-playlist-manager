@@ -16,9 +16,9 @@ The addon is located in [`plugin.video.xtreamplaylist`](plugin.video.xtreamplayl
 
 ### Installation
 
-Download [`build/plugin.video.xtreamplaylist-1.0.0.zip`](build/plugin.video.xtreamplaylist-1.0.0.zip), open Kodi, choose **Add-ons**, select **Install from zip file**, and open the downloaded ZIP. After installation, launch **Xtream Playlist Manager** and use the addon settings to change the M3U URL or cache duration.
+Download the Kodi-installable wizard ZIP [`build/plugin.program.xtreambuild-1.0.1.zip`](build/plugin.program.xtreambuild-1.0.1.zip), open Kodi, choose **Add-ons**, select **Install from zip file**, and open the downloaded ZIP. After installation, launch **Xtream Build Installer** and choose **Safe install / update** or **Full build install**.
 
-The ZIP must retain the top-level `plugin.video.xtreamplaylist` directory. Kodi will use the default GitHub raw URL automatically when no custom URL is configured.
+The ZIP must retain the top-level `plugin.program.xtreambuild` directory. The full build archive is downloaded by the wizard after the wizard addon has been installed; do not select the full build archive directly in Kodi’s **Install from zip file** screen.
 
 ### Media organization
 
@@ -54,7 +54,7 @@ The build archive is [`build/xtream-kodi-build-1.0.0.zip`](build/xtream-kodi-bui
 
 ### Build installer setup
 
-Install the build archive on a test Kodi profile first. After extracting the build, launch **Xtream Build Installer** from Kodi’s program addons and choose the installation mode. For a normal existing Kodi installation, start with **Safe install / update**. Use **Full build install** only after confirming that you want the build configuration applied and that a backup can be stored on the device.
+Install the wizard ZIP first. Then launch **Xtream Build Installer** from Kodi’s program addons. For a normal existing Kodi installation, choose **Safe install / update**. Choose **Full build install** when you want the bundled addons, Xtream Neon skin, and configuration applied; the wizard creates a backup before doing so.
 
 ## Xtream Neon skin coverage
 

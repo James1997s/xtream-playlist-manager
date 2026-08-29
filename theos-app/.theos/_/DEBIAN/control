@@ -1,0 +1,11 @@
+Package: com.james.xtream-playlist-manager
+Name: Xtream Playlist Manager
+Description: Xtream IPTV playlist companion app
+ A rootless Dopamine companion app for entering authorized Xtream details,
+ testing the API, generating an M3U preview, and copying the hosted playlist URL.
+Maintainer: James1997s
+Section: Utilities
+Priority: optional
+Architecture: iphoneos-arm64
+Version: 0.1.0
+Installed-Size: 104

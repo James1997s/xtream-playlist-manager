@@ -1,0 +1,45 @@
+name: Update IPTV playlist
+
+on:
+  workflow_dispatch:
+  schedule:
+    # GitHub schedules use UTC. This runs daily at 03:17 UTC.
+    - cron: "17 3 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependency
+        run: python -m pip install --disable-pip-version-check requests
+
+      - name: Generate playlist
+        env:
+          XTREAM_BASE_URL: ${{ secrets.XTREAM_BASE_URL }}
+          XTREAM_USERNAME: ${{ secrets.XTREAM_USERNAME }}
+          XTREAM_PASSWORD: ${{ secrets.XTREAM_PASSWORD }}
+        run: python scripts/generate_playlist.py
+
+      - name: Publish changed playlist
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add playlist.m3u
+          if git diff --cached --quiet; then
+            echo "Playlist is unchanged"
+          else
+            git commit -m "Update playlist $(date -u +%Y-%m-%d)"
+            git push
+          fi

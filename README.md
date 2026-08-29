@@ -59,3 +59,9 @@ After the first sync, open Kodi’s native **Movies** or **TV Shows** section an
 Version `1.3.0` adds **Set up native Live TV (PVR)**. Kodi’s native **TV / Channels** page is populated by a PVR client, not by video addons. Install and enable **PVR IPTV Simple Client**, open the addon’s setup assistant, and set its M3U playlist URL to the same GitHub raw URL configured in Xtream Playlist Manager. The assistant detects whether the PVR client is installed, opens its settings when possible, and otherwise opens Kodi’s addon browser.
 
 After configuring the PVR client, restart or reload Kodi’s PVR database. Native Movies and TV Shows continue to use the addon’s **Sync to Kodi Movies / TV Shows** action and do not require PVR IPTV Simple Client.
+
+## All-in-one native setup
+
+Version `1.4.0` adds the **Set up everything** flow. It configures the addon playlist, syncs native Movies and TV Shows, detects PVR IPTV Simple Client, writes the configured M3U and optional EPG URL into the PVR settings when supported, and requests a PVR database rebuild. If the PVR client is not installed, the addon opens Kodi’s addon browser with the exact M3U URL to use.
+
+A true native Kodi Channels backend must be provided by a compiled PVR addon. This project does not ship a fake Python PVR binary; it manages the supported PVR IPTV Simple Client backend and performs the rest of the setup automatically.

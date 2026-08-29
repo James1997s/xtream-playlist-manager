@@ -23,3 +23,7 @@ msgstr "Sync native library on refresh"
 msgctxt "#30005"
 msgid "Enable native Movies and TV Shows library"
 msgstr "Enable native Movies and TV Shows library"
+
+msgctxt "#30006"
+msgid "EPG guide URL (optional)"
+msgstr "EPG guide URL (optional)"

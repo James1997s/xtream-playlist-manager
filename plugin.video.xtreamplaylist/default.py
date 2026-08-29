@@ -291,16 +291,42 @@ def clear_native_library():
     _notify("Synced library files cleared")
 
 
+def setup_all(entries=None):
+    if not xbmcgui.Dialog().yesno("Xtream Playlist Manager", "Set up the complete Kodi media experience now?", "This configures the playlist, native library sync, and Live TV setup."):
+        return
+    ADDON.openSettings()
+    if _setting("native_library", "true").lower() == "true":
+        sync_native_library(entries if entries is not None else load_entries(True))
+    setup_native_tv()
+    ADDON.setSetting("setup_complete", "true")
+
+
 def setup_native_tv():
     playlist_url = _setting("playlist_url", DEFAULT_PLAYLIST)
     installed = xbmc.getCondVisibility("System.HasAddon(pvr.iptvsimple)")
     if installed:
-        message = "PVR IPTV Simple Client is installed.\n\nSet its M3U playlist URL to:\n%s\n\nChoose OK to open the PVR settings." % playlist_url
+        configured = False
+        try:
+            pvr = xbmcaddon.Addon("pvr.iptvsimple")
+            pvr.setSetting("m3uPathType", "1")
+            pvr.setSetting("m3uUrl", playlist_url)
+            epg_url = _setting("epg_url", "")
+            if epg_url:
+                pvr.setSetting("epgPathType", "1")
+                pvr.setSetting("epgUrl", epg_url)
+            configured = True
+        except Exception as exc:
+            xbmc.log("PVR IPTV Simple auto-configuration unavailable: %s" % exc, xbmc.LOGWARNING)
+        if configured:
+            _notify("PVR M3U URL configured")
+            xbmc.executebuiltin("PVR.RebuildDatabase")
+            xbmc.executebuiltin("PVR.SetStarted(True)")
+        message = "PVR IPTV Simple Client is installed.\n\nM3U URL:\n%s\n\nOpen PVR settings to verify channel and EPG options?" % playlist_url
         if xbmcgui.Dialog().yesno("Native Live TV setup", message):
             xbmc.executebuiltin("Addon.OpenSettings(pvr.iptvsimple)")
     else:
-        message = "Kodi native TV needs PVR IPTV Simple Client.\n\nInstall and enable that addon, then set its M3U URL to:\n%s\n\nOpen Kodi's addon browser now?" % playlist_url
-        if xbmcgui.Dialog().yesno("Native Live TV setup", message):
+        message = "Kodi native TV needs PVR IPTV Simple Client.\n\nInstall and enable that addon, then run this setup again.\n\nM3U URL:\n%s" % playlist_url
+        if xbmcgui.Dialog().yesno("Native Live TV setup", message, "Open Kodi's addon browser?"):
             xbmc.executebuiltin("ActivateWindow(addonbrowser)")
 
 
@@ -309,6 +335,7 @@ def root(entries):
     for entry in entries:
         counts[entry["kind"]] += 1
     _item("Live TV  ·  %d channels" % counts["live"], _url("live"), True, ADDON.getAddonInfo("icon"))
+    _item("Set up everything", _url("setup_all"), True, ADDON.getAddonInfo("icon"))
     _item("Set up native Live TV (PVR)", _url("setup_native_tv"), True, ADDON.getAddonInfo("icon"))
     _item("Movies  ·  %d titles" % counts["movie"], _url("movies"), True, ADDON.getAddonInfo("icon"))
     shows = len(set(e["name"] for e in entries if e["kind"] == "episode"))
@@ -376,6 +403,9 @@ def search(entries):
 def dispatch():
     params = dict(parse_qsl(urlparse(sys.argv[2] if len(sys.argv) > 2 else "").query))
     route = params.get("route", "root")
+    if route == "setup_all":
+        setup_all(load_entries())
+        return
     if route == "settings":
         ADDON.openSettings()
         return
@@ -400,6 +430,10 @@ def dispatch():
             clear_native_library()
         return
     entries = load_entries()
+    if route == "root" and _setting("setup_complete", "false").lower() != "true":
+        if xbmcgui.Dialog().yesno("Welcome to Xtream Playlist Manager", "Run the complete setup wizard now?", "You can configure this later from the addon menu."):
+            setup_all(entries)
+            return
     if route == "root":
         root(entries)
     elif route == "live":

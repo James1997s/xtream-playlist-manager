@@ -5,5 +5,6 @@
         <setting id="cache_minutes" type="number" label="30003" default="30" />
         <setting id="sync_on_refresh" type="boolean" label="30004" default="true" />
         <setting id="native_library" type="boolean" label="30005" default="true" />
+        <setting id="epg_url" type="text" label="30006" default="" />
     </section>
 </settings>

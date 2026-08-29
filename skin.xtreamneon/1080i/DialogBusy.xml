@@ -1,7 +1,0 @@
-<window type="dialog" id="10102">
-    <controls>
-        <control type="image"><left>760</left><top>440</top><width>400</width><height>200</height><texture>colors/black.png</texture><colordiffuse>F5102A49</colordiffuse></control>
-        <control type="label"><left>800</left><top>505</top><width>320</width><height>45</height><font>Tile</font><textcolor>Mint</textcolor><align>center</align><label>PLEASE WAIT</label></control>
-        <control type="label"><left>800</left><top>565</top><width>320</width><height>35</height><font>Small</font><textcolor>Muted</textcolor><align>center</align><label>$INFO[Control.GetLabel(10)]</label></control>
-    </controls>
-</window>

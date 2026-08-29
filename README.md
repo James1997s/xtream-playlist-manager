@@ -1,63 +1,47 @@
-# Xtream Playlist Manager
+# Xtream Playlist Manager Kodi Addon
 
-This repository maintains an IPTV playlist and includes a Kodi addon that turns the playlist into a clean media library. The addon separates **Live TV**, **Movies**, **TV Shows**, **Seasons**, and **Episodes** using M3U attributes, group names, and standard `S01E02` or `1x02` filename conventions.
+This repository now ships one Kodi addon: **Xtream Playlist Manager**. It reads one M3U playlist URL from its own settings and organizes the entries inside the addon. It does not replace Kodi’s global skin, databases, accounts, or system configuration.
 
-## Playlist URL
+## Install
 
-The current public playlist is available at:
+Download the Kodi addon ZIP:
+
+```text
+https://github.com/James1997s/xtream-playlist-manager/raw/main/build/plugin.video.xtreamplaylist-1.1.0.zip
+```
+
+In Kodi, open **Settings → Add-ons → Install from zip file**, select the ZIP, and then launch **Xtream Playlist Manager** from your video addons. If Kodi asks, enable **Unknown sources**.
+
+## Configure the M3U
+
+Open the addon context menu and choose **Settings**, or open **Add-ons → My add-ons → Video add-ons → Xtream Playlist Manager → Configure**. The default URL is:
 
 ```text
 https://raw.githubusercontent.com/James1997s/xtream-playlist-manager/main/playlist.m3u
 ```
 
-## Kodi addon
+The available settings are the M3U playlist URL and cache duration in minutes. The addon downloads and caches the playlist, then refreshes it when the cache expires or when **Refresh playlist** is selected.
 
-The addon is located in [`plugin.video.xtreamplaylist`](plugin.video.xtreamplaylist). It provides a dark neon themed identity with branded icon and fanart, cached playlist loading, search, favourites, refresh, artwork support, playable stream items, and a browsing hierarchy for shows and seasons.
+## Where media goes
 
-### Installation
-
-Download the Kodi-installable wizard ZIP [`build/plugin.program.xtreambuild-1.0.1.zip`](build/plugin.program.xtreambuild-1.0.1.zip), open Kodi, choose **Add-ons**, select **Install from zip file**, and open the downloaded ZIP. After installation, launch **Xtream Build Installer** and choose **Safe install / update** or **Full build install**.
-
-The ZIP must retain the top-level `plugin.program.xtreambuild` directory. The full build archive is downloaded by the wizard after the wizard addon has been installed; do not select the full build archive directly in Kodi’s **Install from zip file** screen.
-
-### Media organization
-
-The addon recognizes movies when the group or stream metadata contains movie or film categories, or when a VOD file extension is present. It recognizes episodes from `S01E02` and `1x02` patterns, explicit series metadata, and `TV Shows` groups. Episodes are grouped by show and then season. Other entries appear under Live TV and retain their group metadata for filtering and sorting by the active Kodi skin.
-
-The Kodi addon cannot change Kodi’s global skin, but it ships its own visual identity and uses Kodi’s native video list, artwork, information labels, favourites, context menus, and playback integration so it remains compatible with installed skins.
-
-## Automatic playlist refresh
-
-The GitHub Actions workflow can regenerate the playlist daily from Xtream credentials stored as repository secrets named `XTREAM_BASE_URL`, `XTREAM_USERNAME`, and `XTREAM_PASSWORD`. It now requests live streams, movies, and series episodes. Optional variables include `INCLUDE_MOVIES=0`, `INCLUDE_SERIES=0`, and `XTREAM_TIMEOUT`.
-
-Because Xtream stream URLs normally contain account credentials, do not publish the generated playlist publicly unless that exposure is acceptable. A private repository or authenticated proxy is safer for sensitive accounts.
-
-## Project structure
-
-| Path | Purpose |
+| Playlist metadata | Addon location |
 |---|---|
-| `plugin.video.xtreamplaylist/` | Kodi addon source and artwork |
-| `plugin.video.xtreamplaylist/default.py` | Playlist parser, classification, navigation, search, favourites, and playback |
-| `scripts/generate_playlist.py` | Xtream-to-M3U exporter for live TV, movies, and episodes |
-| `.github/workflows/update-playlist.yml` | Scheduled playlist refresh workflow |
-| `build/plugin.video.xtreamplaylist-1.0.0.zip` | Kodi installation package |
+| Live channel or regular `.m3u8` entry | **Live TV** |
+| `group-title` containing `Movie`, `Movies`, `Film`, or `Cinema`; `media-type="movie"`; or a VOD file extension | **Movies** |
+| `S01E01` or `1x01` title pattern | **TV Shows → Show → Season → Episode** |
+| `tv-show`, `series-name`, or an explicit TV-show group | **TV Shows → Show → Season → Episode** |
+| Any saved channel or title | **Favourites** after choosing **Add to favourites** |
 
-The original project notes remain in [`README.legacy.md`](README.legacy.md).
+The addon cannot invent Movies or TV Shows that are absent from the M3U. If the playlist contains only live channels, the Movies and TV Shows sections will be empty. The Xtream generator in this repository can produce movie and episode metadata when the GitHub Actions workflow is configured with authorized Xtream credentials.
 
-## Xtream Kodi Build Installer
+## Features
 
-The repository also contains a self-contained build installer addon at [`plugin.program.xtreambuild`](plugin.program.xtreambuild). The installer provides five actions: **Safe install / update**, **Full build install**, **Restore Kodi backup**, **Check latest build version**, and **Open project repository**.
+The addon provides artwork from `tvg-logo`, Kodi video metadata, playable stream items, category grouping, show/season/episode hierarchy, search, favourites, cached loading, and a manual refresh action. It uses the active Kodi skin, so it does not alter unrelated Kodi menus or settings.
 
-The safe mode installs or updates the Xtream addons and their bundled settings while preserving the rest of Kodi. The full mode creates a timestamped backup of important Kodi configuration and addon files first, then applies the build package and asks whether Kodi should restart. The restore option returns the latest selected backup and can restart Kodi to apply it.
+## Security
 
-The build archive is [`build/xtream-kodi-build-1.0.0.zip`](build/xtream-kodi-build-1.0.0.zip). It contains both Kodi addons and the default Xtream playlist configuration. It does not silently replace personal credentials, accounts, databases, or unrelated Kodi data.
+Xtream stream URLs commonly contain account credentials. Do not publish a credential-bearing playlist publicly unless that exposure is acceptable. Use a private repository or an authenticated proxy when necessary.
 
-### Build installer setup
+## Development
 
-Install the wizard ZIP first. Then launch **Xtream Build Installer** from Kodi’s program addons. For a normal existing Kodi installation, choose **Safe install / update**. Choose **Full build install** when you want the bundled addons, Xtream Neon skin, and configuration applied; the wizard creates a backup before doing so.
-
-## Xtream Neon skin coverage
-
-The full build now bundles `skin.xtreamneon`. Its themed windows cover the home hub, media navigation, Live TV and VOD list presentation, TV-show and season browsing, full-screen video playback, settings, selection dialogs, confirmation dialogs, progress dialogs, and busy/loading states. The skin uses a dark navy, mint, and amber palette with branded background artwork and valid texture assets.
-
-During **Full build install**, the installer selects `skin.xtreamneon` after copying the package and asks whether Kodi should restart. During **Safe install / update**, the current Kodi skin remains unchanged; only the Xtream addons and their settings are updated.
+The addon source is in [`plugin.video.xtreamplaylist`](plugin.video.xtreamplaylist). The current release is `1.1.0`. The earlier build-installer and skin experiments are retained in [`README.build-legacy.md`](README.build-legacy.md) for historical reference but are not part of the standalone addon package.

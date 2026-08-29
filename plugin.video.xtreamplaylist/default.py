@@ -14,6 +14,7 @@ import time
 from collections import defaultdict
 from urllib.parse import parse_qsl, quote, unquote, urlencode, urlparse
 from urllib.request import Request, urlopen
+from xml.sax.saxutils import escape
 
 import xbmc
 import xbmcaddon
@@ -116,7 +117,9 @@ def parse_m3u(raw):
             "title": title,
             "name": name,
             "url": line,
-            "logo": attrs.get("tvg-logo", ""),
+            "logo": attrs.get("tvg-logo") or attrs.get("tvg-art") or attrs.get("logo", ""),
+            "poster": attrs.get("poster") or attrs.get("cover") or attrs.get("tvg-logo", ""),
+            "fanart": attrs.get("fanart") or attrs.get("tvg-fanart") or attrs.get("tvg-logo", ""),
             "group": attrs.get("group-title", "Live TV") or "Live TV",
             "kind": kind,
             "season": season,
@@ -159,8 +162,9 @@ def _item(label, path, folder=False, logo="", info=None, context=None):
     info = info or {}
     li = xbmcgui.ListItem(label=label)
     li.setLabel2(info.get("label2", ""))
-    if logo:
-        li.setArt({"thumb": logo, "icon": logo, "poster": logo})
+    fallback = ADDON.getAddonInfo("icon")
+    art = {"thumb": logo or fallback, "icon": logo or fallback, "poster": info.get("poster") or logo or fallback, "fanart": info.get("fanart") or logo or fallback}
+    li.setArt(art)
     li.setInfo("video", info)
     if context:
         li.addContextMenuItems(context)
@@ -196,6 +200,97 @@ def _finish(content="videos", sort_method="label"):
     xbmcplugin.endOfDirectory(HANDLE, cacheToDisc=False)
 
 
+def _slug(value):
+    value = re.sub(r"[\\/:*?\"<>|]", "_", value or "Unknown")
+    return re.sub(r"\s+", " ", value).strip(" .")[:180] or "Unknown"
+
+
+def _native_root():
+    path = xbmcvfs.translatePath("special://profile/addon_data/plugin.video.xtreamplaylist/library")
+    if not xbmcvfs.exists(path):
+        xbmcvfs.mkdirs(path)
+    return path
+
+
+def _write_text(path, text):
+    parent = os.path.dirname(path)
+    if not xbmcvfs.exists(parent):
+        xbmcvfs.mkdirs(parent)
+    with xbmcvfs.File(path, "w") as handle:
+        handle.write(text)
+
+
+def _register_native_source(name, path):
+    sources_path = xbmcvfs.translatePath("special://profile/sources.xml")
+    try:
+        import xml.etree.ElementTree as ET
+        if xbmcvfs.exists(sources_path):
+            with xbmcvfs.File(sources_path, "r") as handle:
+                root_node = ET.fromstring(handle.read())
+        else:
+            root_node = ET.Element("sources")
+        video = root_node.find("video")
+        if video is None:
+            video = ET.SubElement(root_node, "video")
+        for source in video.findall("source"):
+            if source.findtext("path") == path:
+                return
+        source = ET.SubElement(video, "source")
+        ET.SubElement(source, "name").text = name
+        ET.SubElement(source, "path", {"pathversion": "1"}).text = path
+        ET.SubElement(source, "allowsharing").text = "false"
+        xml = ET.tostring(root_node, encoding="unicode")
+        _write_text(sources_path, "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n" + xml)
+    except Exception as exc:
+        xbmc.log("Could not register native Kodi source %s: %s" % (name, exc), xbmc.LOGWARNING)
+
+
+def _art_tags(entry):
+    thumb = escape(entry.get("poster") or entry.get("logo") or ADDON.getAddonInfo("icon"))
+    fanart = escape(entry.get("fanart") or entry.get("poster") or entry.get("logo") or ADDON.getAddonInfo("icon"))
+    return "<thumb aspect=\"poster\">%s</thumb><fanart><thumb>%s</thumb></fanart>" % (thumb, fanart)
+
+
+def sync_native_library(entries):
+    root_path = _native_root()
+    movie_path = os.path.join(root_path, "movies")
+    show_path = os.path.join(root_path, "tvshows")
+    shows_written = set()
+    for entry in entries:
+        art = _art_tags(entry)
+        if entry["kind"] == "movie":
+            folder = os.path.join(movie_path, _slug(entry["name"]))
+            stem = _slug(entry["name"])
+            _write_text(os.path.join(folder, stem + ".strm"), entry["url"] + "\n")
+            movie_xml = "<movie><title>%s</title><genre>%s</genre>%s</movie>" % (escape(entry["title"]), escape(entry["group"]), art)
+            _write_text(os.path.join(folder, stem + ".nfo"), movie_xml)
+        elif entry["kind"] == "episode":
+            show_folder = os.path.join(show_path, _slug(entry["name"]))
+            season_folder = os.path.join(show_folder, "Season %02d" % entry["season"])
+            stem = "S%02dE%02d - %s" % (entry["season"], entry["episode"], _slug(entry["title"]))
+            _write_text(os.path.join(season_folder, stem + ".strm"), entry["url"] + "\n")
+            episode_xml = "<episodedetails><title>%s</title><showtitle>%s</showtitle><season>%d</season><episode>%d</episode>%s</episodedetails>" % (escape(entry["title"]), escape(entry["name"]), entry["season"], entry["episode"], art)
+            _write_text(os.path.join(season_folder, stem + ".nfo"), episode_xml)
+            if entry["name"] not in shows_written:
+                show_xml = "<tvshow><title>%s</title>%s</tvshow>" % (escape(entry["name"]), art)
+                _write_text(os.path.join(show_folder, "tvshow.nfo"), show_xml)
+                shows_written.add(entry["name"])
+    _register_native_source("Xtream Movies", "special://profile/addon_data/plugin.video.xtreamplaylist/library/movies/")
+    _register_native_source("Xtream TV Shows", "special://profile/addon_data/plugin.video.xtreamplaylist/library/tvshows/")
+    xbmc.executebuiltin("UpdateLibrary(video)")
+    _notify("Native library sync complete")
+
+
+def clear_native_library():
+    root_path = _native_root()
+    for subdir in ("movies", "tvshows"):
+        path = os.path.join(root_path, subdir)
+        if xbmcvfs.exists(path):
+            xbmcvfs.delete(path)
+    xbmc.executebuiltin("UpdateLibrary(video)")
+    _notify("Synced library files cleared")
+
+
 def root(entries):
     counts = defaultdict(int)
     for entry in entries:
@@ -207,6 +302,9 @@ def root(entries):
     _item("Favourites", _url("favourites"), True, ADDON.getAddonInfo("icon"))
     _item("Search", _url("search"), True, ADDON.getAddonInfo("icon"))
     _item("Refresh playlist", _url("refresh"), True, ADDON.getAddonInfo("icon"))
+    if _setting("native_library", "true").lower() == "true":
+        _item("Sync to Kodi Movies / TV Shows", _url("sync_library"), True, ADDON.getAddonInfo("icon"))
+        _item("Clear synced library files", _url("clear_library"), True, ADDON.getAddonInfo("icon"))
     _item("Settings", _url("settings"), True, ADDON.getAddonInfo("icon"))
     _finish()
 
@@ -215,7 +313,7 @@ def list_entries(entries, title, kind=None, group=None):
     selected = [e for e in entries if (not kind or e["kind"] == kind) and (not group or e["group"] == group)]
     selected.sort(key=lambda e: e["title"].lower())
     for entry in selected:
-        info = {"title": entry["title"], "genre": entry["group"], "mediatype": "video"}
+        info = {"title": entry["title"], "genre": entry["group"], "mediatype": "video", "poster": entry.get("poster", entry.get("logo", "")), "fanart": entry.get("fanart", entry.get("logo", ""))}
         _item(entry["title"], entry["url"], False, entry["logo"], info, _context(entry))
     _finish()
 
@@ -247,7 +345,7 @@ def episodes(entries, show, season):
     selected.sort(key=lambda e: (e["episode"], e["title"].lower()))
     for entry in selected:
         label = "E%02d  %s" % (entry["episode"], entry["title"]) if entry["episode"] else entry["title"]
-        info = {"title": entry["title"], "tvshowtitle": show, "season": int(season), "episode": entry["episode"], "mediatype": "episode"}
+        info = {"title": entry["title"], "tvshowtitle": show, "season": int(season), "episode": entry["episode"], "mediatype": "episode", "poster": entry.get("poster", entry.get("logo", "")), "fanart": entry.get("fanart", entry.get("logo", ""))}
         _item(label, entry["url"], False, entry["logo"], info, _context(entry))
     _finish("episodes")
 
@@ -268,9 +366,21 @@ def dispatch():
         ADDON.openSettings()
         return
     if route == "refresh":
-        load_entries(True)
+        refreshed = load_entries(True)
+        if _setting("native_library", "true").lower() == "true" and _setting("sync_on_refresh", "true").lower() == "true":
+            sync_native_library(refreshed)
         _notify("Playlist refreshed")
         xbmc.executebuiltin("Container.Refresh")
+        return
+    if route == "sync_library":
+        if _setting("native_library", "true").lower() == "true":
+            sync_native_library(load_entries())
+        else:
+            _notify("Native library sync is disabled in Settings")
+        return
+    if route == "clear_library":
+        if xbmcgui.Dialog().yesno("Xtream Playlist Manager", "Clear the synced Movies and TV Shows files?", "This does not delete your source playlist."):
+            clear_native_library()
         return
     entries = load_entries()
     if route == "root":

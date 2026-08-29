@@ -15,3 +15,11 @@ msgstr "M3U playlist URL"
 msgctxt "#30003"
 msgid "Cache duration (minutes)"
 msgstr "Cache duration (minutes)"
+
+msgctxt "#30004"
+msgid "Sync native library on refresh"
+msgstr "Sync native library on refresh"
+
+msgctxt "#30005"
+msgid "Enable native Movies and TV Shows library"
+msgstr "Enable native Movies and TV Shows library"

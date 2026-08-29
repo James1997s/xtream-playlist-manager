@@ -45,3 +45,11 @@ Xtream stream URLs commonly contain account credentials. Do not publish a creden
 ## Development
 
 The addon source is in [`plugin.video.xtreamplaylist`](plugin.video.xtreamplaylist). The current release is `1.1.0`. The earlier build-installer and skin experiments are retained in [`README.build-legacy.md`](README.build-legacy.md) for historical reference but are not part of the standalone addon package.
+
+## Native Kodi library sync
+
+Version `1.2.0` adds **Sync to Kodi Movies / TV Shows**. Enable **Enable native Movies and TV Shows library** in the addon settings, then select **Sync to Kodi Movies / TV Shows**. The addon creates Kodi-compatible STRM and NFO files, registers native video sources, writes show-level metadata, and triggers a video-library update. You can enable **Sync native library on refresh** to repeat this automatically after refreshing the M3U.
+
+Artwork is loaded from `tvg-logo`, `tvg-art`, `poster`, `cover`, `fanart`, and `tvg-fanart` attributes when present. The addon passes poster, thumbnail, icon, and fanart artwork to Kodi list items and writes artwork tags into native movie, show, and episode NFO files. When the M3U has no artwork URL, the addon icon is used as a safe fallback.
+
+After the first sync, open Kodi’s native **Movies** or **TV Shows** section and allow the library update to finish. Only entries that actually exist in the M3U can appear in the native library.

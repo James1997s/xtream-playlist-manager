@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="skin.xtreamneon" name="Xtream Neon" version="1.0.0" provider-name="James1997s">
+    <requires>
+        <import addon="xbmc.gui" version="5.17.0" />
+    </requires>
+    <extension point="xbmc.gui.skin" debugging="false">
+        <res width="1920" height="1080" aspect="16:9" defaultresolution="1080i" defaultresolutionwide="1080i" folder="1080i" />
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Dark neon IPTV skin for Xtream Playlist Manager.</summary>
+        <description lang="en_GB">A cinematic dark-neon Kodi skin with a focused home hub, large navigation tiles, playlist artwork, clear video browsing, and minimal distraction.</description>
+        <platform>all</platform>
+        <license>MIT</license>
+        <source>https://github.com/James1997s/xtream-playlist-manager</source>
+    </extension>
+</addon>

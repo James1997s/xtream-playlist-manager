@@ -117,6 +117,8 @@ def install(mode):
             return
         dialog.update(75, "Installing %s" % mode, "Applying Xtream addons and branding")
         safe_extract(archive, home(), full=(mode == "Full build"))
+        if mode == "Full build":
+            xbmc.executebuiltin("Skin.SetSkin(skin.xtreamneon)")
         dialog.update(100, "Installation complete", "Restart Kodi to apply changes")
         xbmc.sleep(700)
         if xbmcgui.Dialog().yesno(TITLE, "%s installed successfully." % mode, "Restart Kodi now?"):

@@ -55,3 +55,9 @@ The build archive is [`build/xtream-kodi-build-1.0.0.zip`](build/xtream-kodi-bui
 ### Build installer setup
 
 Install the build archive on a test Kodi profile first. After extracting the build, launch **Xtream Build Installer** from Kodi’s program addons and choose the installation mode. For a normal existing Kodi installation, start with **Safe install / update**. Use **Full build install** only after confirming that you want the build configuration applied and that a backup can be stored on the device.
+
+## Xtream Neon skin coverage
+
+The full build now bundles `skin.xtreamneon`. Its themed windows cover the home hub, media navigation, Live TV and VOD list presentation, TV-show and season browsing, full-screen video playback, settings, selection dialogs, confirmation dialogs, progress dialogs, and busy/loading states. The skin uses a dark navy, mint, and amber palette with branded background artwork and valid texture assets.
+
+During **Full build install**, the installer selects `skin.xtreamneon` after copying the package and asks whether Kodi should restart. During **Safe install / update**, the current Kodi skin remains unchanged; only the Xtream addons and their settings are updated.

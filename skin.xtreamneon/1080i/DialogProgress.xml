@@ -1,0 +1,8 @@
+<window type="dialog" id="10101">
+    <controls>
+        <control type="image"><left>470</left><top>405</top><width>980</width><height>260</height><texture>colors/black.png</texture><colordiffuse>F5102A49</colordiffuse></control>
+        <control type="label"><left>540</left><top>450</top><width>840</width><height>46</height><font>Heading</font><textcolor>Mint</textcolor><label>$INFO[Control.GetLabel(1)]</label></control>
+        <control type="label"><left>540</left><top>515</top><width>840</width><height>40</height><font>Small</font><textcolor>White</textcolor><label>$INFO[Control.GetLabel(2)]</label></control>
+        <control type="progress" id="20"><left>540</left><top>595</top><width>840</width><height>12</height><info>Control.GetLabel(3)</info><texturebg>colors/black.png</texturebg><lefttexture>colors/white.png</lefttexture><colordiffuse>FF4DE1C1</colordiffuse></control>
+    </controls>
+</window>

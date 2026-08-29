@@ -1,0 +1,27 @@
+<window type="home" id="0">
+    <defaultcontrol always="true">9000</defaultcontrol>
+    <views>9000</views>
+    <controls>
+        <include>Background</include>
+        <include>Header</include>
+        <control type="label">
+            <left>92</left><top>140</top><width>1300</width><height>65</height>
+            <font>Heading</font><textcolor>Mint</textcolor><label>YOUR ENTERTAINMENT HUB</label>
+        </control>
+        <control type="label">
+            <left>92</left><top>212</top><width>1200</width><height>42</height>
+            <font>Small</font><textcolor>Muted</textcolor><label>Live channels, movies and shows in one focused library.</label>
+        </control>
+        <control type="fixedlist" id="9000">
+            <left>92</left><top>330</top><width>1736</width><height>450</height>
+            <orientation>horizontal</orientation><itemgap>28</itemgap><focusposition>0</focusposition>
+            <content>home</content>
+            <itemlayout width="360" height="210"><include>Tile</include></itemlayout>
+            <focusedlayout width="360" height="230">
+                <include>Tile</include>
+                <control type="image"><left>0</left><top>0</top><width>360</width><height>8</height><texture>colors/white.png</texture><colordiffuse>FFFFBF69</colordiffuse></control>
+            </focusedlayout>
+        </control>
+        <include>Footer</include>
+    </controls>
+</window>

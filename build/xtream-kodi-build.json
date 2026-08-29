@@ -6,7 +6,8 @@
   "playlist": "https://raw.githubusercontent.com/James1997s/xtream-playlist-manager/main/playlist.m3u",
   "addons": [
     "plugin.video.xtreamplaylist",
-    "plugin.program.xtreambuild"
+    "plugin.program.xtreambuild",
+    "skin.xtreamneon"
   ],
   "install_note": "Install with the bundled Xtream Build Installer or extract into the Kodi home directory, then restart Kodi."
 }

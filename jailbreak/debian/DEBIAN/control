@@ -1,0 +1,10 @@
+Package: com.james.xtream-playlist-manager
+Name: Xtream Playlist Manager
+Version: 0.1.0-2
+Architecture: iphoneos-arm64
+Description: Xtream-to-M3U playlist manager companion package
+ A rootless Dopamine package containing the project source and setup documentation.
+ This source-only build requires an Xcode-built app binary for the launchable iOS app.
+Maintainer: James1997s
+Section: Utilities
+Priority: optional

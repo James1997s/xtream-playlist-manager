@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "Xtream Playlist Manager package installed."
+echo "This source-only build requires an Xcode-built iOS app binary before it can launch."
+exit 0

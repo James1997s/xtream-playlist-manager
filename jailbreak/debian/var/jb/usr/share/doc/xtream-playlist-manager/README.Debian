@@ -1,0 +1,3 @@
+This is a corrected rootless package layout. All payload files are under /var/jb.
+The archive contains source and documentation, not a compiled iOS executable.
+Build the SwiftUI app with Xcode on macOS before creating a final launchable package.

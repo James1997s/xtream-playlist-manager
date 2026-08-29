@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.xtreamplaylist" name="Xtream Playlist Manager" version="1.0.0" provider-name="James1997s">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">A polished IPTV library built around your GitHub M3U playlist.</summary>
+        <description lang="en_GB">Browse live TV by group, search channels, save favourites, refresh artwork, and launch streams from the playlist maintained in your GitHub repository. Movies and TV shows are organized automatically from M3U metadata.</description>
+        <platform>all</platform>
+        <license>MIT</license>
+        <source>https://github.com/James1997s/xtream-playlist-manager</source>
+        <website>https://github.com/James1997s/xtream-playlist-manager</website>
+    </extension>
+</addon>

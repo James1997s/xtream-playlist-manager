@@ -1,0 +1,17 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Xtream Playlist Manager\n"
+"Language: en_GB\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgctxt "#30001"
+msgid "Playlist"
+msgstr "Playlist"
+
+msgctxt "#30002"
+msgid "M3U playlist URL"
+msgstr "M3U playlist URL"
+
+msgctxt "#30003"
+msgid "Cache duration (minutes)"
+msgstr "Cache duration (minutes)"

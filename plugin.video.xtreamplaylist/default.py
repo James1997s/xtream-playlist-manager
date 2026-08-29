@@ -291,11 +291,25 @@ def clear_native_library():
     _notify("Synced library files cleared")
 
 
+def setup_native_tv():
+    playlist_url = _setting("playlist_url", DEFAULT_PLAYLIST)
+    installed = xbmc.getCondVisibility("System.HasAddon(pvr.iptvsimple)")
+    if installed:
+        message = "PVR IPTV Simple Client is installed.\n\nSet its M3U playlist URL to:\n%s\n\nChoose OK to open the PVR settings." % playlist_url
+        if xbmcgui.Dialog().yesno("Native Live TV setup", message):
+            xbmc.executebuiltin("Addon.OpenSettings(pvr.iptvsimple)")
+    else:
+        message = "Kodi native TV needs PVR IPTV Simple Client.\n\nInstall and enable that addon, then set its M3U URL to:\n%s\n\nOpen Kodi's addon browser now?" % playlist_url
+        if xbmcgui.Dialog().yesno("Native Live TV setup", message):
+            xbmc.executebuiltin("ActivateWindow(addonbrowser)")
+
+
 def root(entries):
     counts = defaultdict(int)
     for entry in entries:
         counts[entry["kind"]] += 1
     _item("Live TV  ·  %d channels" % counts["live"], _url("live"), True, ADDON.getAddonInfo("icon"))
+    _item("Set up native Live TV (PVR)", _url("setup_native_tv"), True, ADDON.getAddonInfo("icon"))
     _item("Movies  ·  %d titles" % counts["movie"], _url("movies"), True, ADDON.getAddonInfo("icon"))
     shows = len(set(e["name"] for e in entries if e["kind"] == "episode"))
     _item("TV Shows  ·  %d series" % shows, _url("shows"), True, ADDON.getAddonInfo("icon"))
@@ -364,6 +378,9 @@ def dispatch():
     route = params.get("route", "root")
     if route == "settings":
         ADDON.openSettings()
+        return
+    if route == "setup_native_tv":
+        setup_native_tv()
         return
     if route == "refresh":
         refreshed = load_entries(True)

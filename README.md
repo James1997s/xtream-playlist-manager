@@ -53,3 +53,9 @@ Version `1.2.0` adds **Sync to Kodi Movies / TV Shows**. Enable **Enable native 
 Artwork is loaded from `tvg-logo`, `tvg-art`, `poster`, `cover`, `fanart`, and `tvg-fanart` attributes when present. The addon passes poster, thumbnail, icon, and fanart artwork to Kodi list items and writes artwork tags into native movie, show, and episode NFO files. When the M3U has no artwork URL, the addon icon is used as a safe fallback.
 
 After the first sync, open Kodi’s native **Movies** or **TV Shows** section and allow the library update to finish. Only entries that actually exist in the M3U can appear in the native library.
+
+## Native Live TV channels
+
+Version `1.3.0` adds **Set up native Live TV (PVR)**. Kodi’s native **TV / Channels** page is populated by a PVR client, not by video addons. Install and enable **PVR IPTV Simple Client**, open the addon’s setup assistant, and set its M3U playlist URL to the same GitHub raw URL configured in Xtream Playlist Manager. The assistant detects whether the PVR client is installed, opens its settings when possible, and otherwise opens Kodi’s addon browser.
+
+After configuring the PVR client, restart or reload Kodi’s PVR database. Native Movies and TV Shows continue to use the addon’s **Sync to Kodi Movies / TV Shows** action and do not require PVR IPTV Simple Client.

@@ -43,3 +43,4 @@
 - [ ] Audit Xtream series coverage against the current GitHub M3U and report missing or partially fetched shows without modifying playlists
 
 - [x] Fetch any missing Xtream series details and generate a complete 17,000+ series M3U regardless of file size
+- [ ] Reduce the GitHub playlist export below the normal repository file-size limit while preserving maximum practical content coverage

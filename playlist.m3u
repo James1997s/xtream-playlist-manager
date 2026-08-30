@@ -1,4 +1,4 @@
-#EXTM3U
+#EXTM3U url-tvg="https://epg.pw/xmltv/epg.xml"
 # Generated from Xtream API; streams: 11774
 #EXTINF:-1 tvg-name="USA AMC" group-title="Live TV" tvg-logo="http://185.193.88.130:80/images/970fd4a37554c8e2229b0e660999c7dc.png",USA AMC
 http://kytv.xyz/live/try24570/00176668/175787.m3u8

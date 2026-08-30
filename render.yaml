@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: xtream-playlist-stremio-addon
+    runtime: node
+    plan: free
+    buildCommand: "cd stremio-addon && npm install --omit=dev"
+    startCommand: "node stremio-addon/server.js"
+    healthCheckPath: /manifest.json
+    envVars:
+      - key: M3U_URL
+        value: https://raw.githubusercontent.com/James1997s/xtream-playlist-manager/main/playlist.m3u
+      - key: NODE_VERSION
+        value: "22"

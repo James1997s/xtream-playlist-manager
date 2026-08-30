@@ -131,7 +131,7 @@ def parse_m3u(raw):
 
 def load_entries(force=False):
     playlist_url = _setting("playlist_url", DEFAULT_PLAYLIST).strip()
-    cache_minutes = int(_setting("cache_minutes", "30") or "30")
+    cache_minutes = int(_setting("cache_minutes", "60") or "60")
     cached = _read_json(CACHE_FILE, {})
     now = int(time.time())
     if not force and cached.get("url") == playlist_url and now - int(cached.get("updated", 0)) < cache_minutes * 60:
@@ -198,6 +198,19 @@ def _finish(content="videos", sort_method="label"):
     xbmcplugin.setContent(HANDLE, content)
     xbmcplugin.addSortMethod(HANDLE, xbmcplugin.SORT_METHOD_LABEL)
     xbmcplugin.endOfDirectory(HANDLE, cacheToDisc=False)
+
+
+def _category(entry):
+    """Return a stable, human-readable category for any playlist entry."""
+    group = (entry.get("group") or "").strip()
+    prefix = {"movie": "Movies / ", "episode": "TV Shows / "}.get(entry.get("kind"), "")
+    if prefix and group.lower().startswith(prefix.lower()):
+        group = group[len(prefix):].strip()
+    return group or {"live": "Uncategorised", "movie": "Uncategorised", "episode": "Uncategorised"}.get(entry.get("kind"), "Uncategorised")
+
+
+def _category_key(value):
+    return (value or "").casefold()
 
 
 def _slug(value):
@@ -350,12 +363,30 @@ def root(entries):
     _finish()
 
 
+def list_categories(entries, kind, title):
+    """Show categories before titles so large playlists stay easy to browse."""
+    grouped = defaultdict(list)
+    for entry in entries:
+        if entry["kind"] == kind:
+            grouped[_category_key(_category(entry))].append(entry)
+    for key in sorted(grouped, key=lambda value: value.casefold()):
+        category = _category(grouped[key][0])
+        label = "%s  ·  %d" % (category, len(grouped[key]))
+        _item(label, _url("category", kind=kind, group=quote(category, safe="")), True, grouped[key][0].get("logo", ""), {"title": category, "genre": category})
+    if not grouped:
+        _notify("No %s found" % title.lower())
+    _finish("videos")
+
+
 def list_entries(entries, title, kind=None, group=None):
-    selected = [e for e in entries if (not kind or e["kind"] == kind) and (not group or e["group"] == group)]
-    selected.sort(key=lambda e: e["title"].lower())
+    selected = [e for e in entries if (not kind or e["kind"] == kind) and (not group or _category(e).casefold() == (group or "").casefold())]
+    selected.sort(key=lambda e: (e["title"].casefold(), e["name"].casefold()))
     for entry in selected:
-        info = {"title": entry["title"], "genre": entry["group"], "mediatype": "video", "poster": entry.get("poster", entry.get("logo", "")), "fanart": entry.get("fanart", entry.get("logo", ""))}
+        category = _category(entry)
+        info = {"title": entry["title"], "genre": category, "mediatype": "video", "poster": entry.get("poster", entry.get("logo", "")), "fanart": entry.get("fanart", entry.get("logo", ""))}
         _item(entry["title"], entry["url"], False, entry["logo"], info, _context(entry))
+    if not selected:
+        _notify("No matching items found")
     _finish()
 
 
@@ -392,11 +423,20 @@ def episodes(entries, show, season):
 
 
 def search(entries):
-    term = xbmcgui.Dialog().input("Search playlist", type=xbmcgui.INPUT_ALPHANUM)
+    term = xbmcgui.Dialog().input("Search channels, movies and TV shows", type=xbmcgui.INPUT_ALPHANUM)
+    term = (term or "").strip()
     if not term:
         return root(entries)
-    needle = term.lower()
-    matches = [e for e in entries if needle in (e["title"] + " " + e["name"] + " " + e["group"]).lower()]
+    needle = term.casefold()
+    matches = []
+    for entry in entries:
+        searchable = " ".join((entry.get("title", ""), entry.get("name", ""), _category(entry), entry.get("group", ""), entry.get("id", ""))).casefold()
+        if needle in searchable:
+            matches.append(entry)
+    matches.sort(key=lambda e: ({"live": 0, "movie": 1, "episode": 2}.get(e["kind"], 9), e["title"].casefold()))
+    if not matches:
+        xbmcgui.Dialog().ok("Search", "No results found for: %s" % term)
+        return root(entries)
     list_entries(matches, "Search: " + term)
 
 
@@ -437,11 +477,13 @@ def dispatch():
     if route == "root":
         root(entries)
     elif route == "live":
-        list_entries(entries, "Live TV", kind="live")
+        list_categories(entries, "live", "Live TV")
     elif route == "movies":
-        list_entries(entries, "Movies", kind="movie")
+        list_categories(entries, "movie", "Movies")
     elif route == "shows":
-        shows(entries)
+        list_categories(entries, "episode", "TV Shows")
+    elif route == "category":
+        list_entries(entries, "Category: " + _decode(params.get("group")), kind=params.get("kind"), group=_decode(params.get("group")))
     elif route == "seasons":
         seasons(entries, _decode(params.get("show")))
     elif route == "episodes":

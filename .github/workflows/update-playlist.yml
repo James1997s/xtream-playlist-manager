@@ -3,8 +3,8 @@ name: Update IPTV playlist
 on:
   workflow_dispatch:
   schedule:
-    # GitHub schedules use UTC. This runs daily at 03:17 UTC.
-    - cron: "17 3 * * *"
+    # GitHub schedules use UTC. This runs at the top of every hour.
+    - cron: "0 * * * *"
 
 permissions:
   contents: write

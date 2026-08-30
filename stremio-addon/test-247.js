@@ -1,0 +1,14 @@
+"use strict";
+const fs = require("node:fs");
+const source = fs.readFileSync("server.js", "utf8");
+const body = source.replace(/http\.createServer\([\s\S]*?\n\nmodule\.exports = \{/, "module.exports = {");
+const moduleShim = { exports: {} };
+new Function("require", "module", "exports", body)(require, moduleShim, moduleShim.exports);
+const { is247Channel, parseM3U, REFRESH_MS } = moduleShim.exports;
+if (!is247Channel("USA News 24/7", {})) throw new Error("24/7 title was not detected");
+if (!is247Channel("Movies", { "group-title": "Always-On Channels" })) throw new Error("always-on group was not detected");
+if (is247Channel("BBC News", { "group-title": "United Kingdom" })) throw new Error("regular channel was misclassified");
+const entries = parseM3U(`#EXTM3U\n#EXTINF:-1 tvg-name="USA News 24/7" group-title="Live TV",USA News 24/7\nhttps://example.test/news.m3u8\n#EXTINF:-1 tvg-name="USA News" group-title="Live TV",USA News\nhttps://example.test/news2.m3u8`);
+if (entries.length !== 2 || !entries[0].is247 || entries[1].is247) throw new Error("playlist 24/7 classification failed");
+if (REFRESH_MS !== 60 * 60 * 1000) throw new Error("refresh interval is not one hour");
+console.log("24/7 classification and hourly refresh tests passed");

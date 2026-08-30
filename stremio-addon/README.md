@@ -1,6 +1,6 @@
 # Xtream Playlist Manager — Stremio Addon
 
-This is a proper Stremio HTTP addon that reads the project M3U playlist and exposes organised **Live TV**, **Movies**, and **TV Shows** catalogs. Categories are shown first with item counts, catalog search works through Stremio’s search field, and the playlist is refreshed automatically at most once per hour.
+This is a proper Stremio HTTP addon that reads the project M3U playlist and exposes organised **Live TV**, **Movies**, and **TV Shows** catalogs. Live channels are labelled and sorted by **region**, **country**, playlist category, and language when those fields are available. Common prefixes such as `USA`, `UK`, `Canada`, `India`, `France`, and `Australia` are detected automatically, while explicit `country`, `tvg-country`, `language`, and `tvg-language` attributes take priority. Catalog search covers channel names, show names, categories, regions, countries, languages, and the `24/7` or `always-on` label. Live TV is split into **Regional Channels**, **24/7 Channels**, and **All Channels** catalogs. A channel is placed in the 24/7 catalog when its title, group, `tvg-name`, or `channel-type` contains markers such as `24/7`, `24 hours`, `always-on`, `continuous`, or `round-the-clock`. The playlist is refreshed automatically at most once per hour.
 
 ## Run locally
 

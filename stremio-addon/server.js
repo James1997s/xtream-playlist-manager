@@ -9,6 +9,58 @@ const M3U_URL = process.env.M3U_URL || "https://raw.githubusercontent.com/James1
 const REFRESH_MS = 60 * 60 * 1000;
 let cache = { loadedAt: 0, entries: [] };
 
+const COUNTRY_RULES = [
+  ["United States", "North America", /^(usa|us|u\.s\.?)(?:\s|[-|:])/i],
+  ["Canada", "North America", /^(canada|can)(?:\s|[-|:])/i],
+  ["Mexico", "Latin America", /^(mexico|mex)(?:\s|[-|:])/i],
+  ["Brazil", "Latin America", /^(brazil|bra)(?:\s|[-|:])/i],
+  ["Argentina", "Latin America", /^(argentina|arg)(?:\s|[-|:])/i],
+  ["Colombia", "Latin America", /^(colombia|col)(?:\s|[-|:])/i],
+  ["United Kingdom", "Europe", /^(uk|u\.k\.?|united kingdom|british|england)(?:\s|[-|:])/i],
+  ["Ireland", "Europe", /^(ireland|irish)(?:\s|[-|:])/i],
+  ["France", "Europe", /^(france|french|fra)(?:\s|[-|:])/i],
+  ["Germany", "Europe", /^(germany|german|deu)(?:\s|[-|:])/i],
+  ["Italy", "Europe", /^(italy|italian|ita)(?:\s|[-|:])/i],
+  ["Spain", "Europe", /^(spain|spanish|esp)(?:\s|[-|:])/i],
+  ["Portugal", "Europe", /^(portugal|prt)(?:\s|[-|:])/i],
+  ["Netherlands", "Europe", /^(netherlands|dutch|nl)(?:\s|[-|:])/i],
+  ["Belgium", "Europe", /^(belgium|belgian|bel)(?:\s|[-|:])/i],
+  ["Switzerland", "Europe", /^(switzerland|swiss|che)(?:\s|[-|:])/i],
+  ["Austria", "Europe", /^(austria|aut)(?:\s|[-|:])/i],
+  ["Turkey", "Europe / Middle East", /^(turkey|turkish|türkiye)(?:\s|[-|:])/i],
+  ["Russia", "Europe / Asia", /^(russia|russian|rus)(?:\s|[-|:])/i],
+  ["India", "Asia", /^(india|indian|ind)(?:\s|[-|:])/i],
+  ["Pakistan", "Asia", /^(pakistan|pak)(?:\s|[-|:])/i],
+  ["Bangladesh", "Asia", /^(bangladesh|bgd)(?:\s|[-|:])/i],
+  ["Japan", "Asia", /^(japan|japanese|jpn)(?:\s|[-|:])/i],
+  ["South Korea", "Asia", /^(korea|south korea|kor)(?:\s|[-|:])/i],
+  ["China", "Asia", /^(china|chinese|chn)(?:\s|[-|:])/i],
+  ["Philippines", "Asia", /^(philippines|phl)(?:\s|[-|:])/i],
+  ["Indonesia", "Asia", /^(indonesia|idn)(?:\s|[-|:])/i],
+  ["Malaysia", "Asia", /^(malaysia|mys)(?:\s|[-|:])/i],
+  ["Singapore", "Asia", /^(singapore|sgp)(?:\s|[-|:])/i],
+  ["Thailand", "Asia", /^(thailand|tha)(?:\s|[-|:])/i],
+  ["United Arab Emirates", "Middle East", /^(uae|u\.a\.e\.?|dubai|emirates)(?:\s|[-|:])/i],
+  ["Saudi Arabia", "Middle East", /^(saudi|saudi arabia|ksa)(?:\s|[-|:])/i],
+  ["Israel", "Middle East", /^(israel|israeli|isr)(?:\s|[-|:])/i],
+  ["Egypt", "Middle East / Africa", /^(egypt|egyptian|egy)(?:\s|[-|:])/i],
+  ["South Africa", "Africa", /^(south africa|za|saf)(?:\s|[-|:])/i],
+  ["Nigeria", "Africa", /^(nigeria|nga)(?:\s|[-|:])/i],
+  ["Australia", "Oceania", /^(australia|aus)(?:\s|[-|:])/i],
+  ["New Zealand", "Oceania", /^(new zealand|nz)(?:\s|[-|:])/i],
+];
+
+function locationFor(title, attrs) {
+  const declaredCountry = clean(attrs.country || attrs["tvg-country"] || "");
+  const declaredLanguage = clean(attrs.language || attrs["tvg-language"] || "");
+  if (declaredCountry) {
+    const found = COUNTRY_RULES.find(([country]) => country.toLocaleLowerCase() === declaredCountry.toLocaleLowerCase());
+    return { country: declaredCountry, region: found ? found[1] : "Other", language: declaredLanguage || "Unknown" };
+  }
+  const found = COUNTRY_RULES.find(([, , pattern]) => pattern.test(title));
+  return { country: found ? found[0] : "International", region: found ? found[1] : "International", language: declaredLanguage || "Unknown" };
+}
+
 function decode(value) {
   return Buffer.from(value, "base64url").toString("utf8");
 }
@@ -34,6 +86,11 @@ function parseAttributes(header) {
   const attrs = {};
   for (const match of header.matchAll(/([\w-]+)="([^"]*)"/g)) attrs[match[1].toLowerCase()] = clean(match[2]);
   return attrs;
+}
+
+function is247Channel(title, attrs) {
+  const text = `${title} ${attrs["group-title"] || ""} ${attrs["tvg-name"] || ""} ${attrs["channel-type"] || ""}`;
+  return /(?:^|[\s|:_-])(?:24\s*[/.-]?\s*7|24\s*hours?|always[- ]?on|continuous|round[- ]?the[- ]?clock)(?:$|[\s|:_-])/i.test(text) || /24\s*\/\s*7/i.test(text);
 }
 
 function classify(attrs, title, streamUrl) {
@@ -64,8 +121,9 @@ function parseM3U(raw) {
     const { attrs, title } = pending;
     const type = classify(attrs, title, line);
     const category = clean(attrs["group-title"] || "Uncategorised").replace(/^Movies\s*\/\s*/i, "").replace(/^TV Shows\s*\/\s*/i, "") || "Uncategorised";
+    const location = locationFor(`${title} ${attrs["group-title"] || ""}`, attrs);
     entries.push({
-      id: idFor("item", attrs["tvg-id"] || line), title, url: line, logo: attrs["tvg-logo"] || attrs.logo || "", poster: attrs.poster || attrs.cover || attrs["tvg-logo"] || "", fanart: attrs.fanart || attrs["tvg-fanart"] || attrs["tvg-logo"] || "", category, ...type,
+      id: idFor("item", attrs["tvg-id"] || line), title, url: line, logo: attrs["tvg-logo"] || attrs.logo || "", poster: attrs.poster || attrs.cover || attrs["tvg-logo"] || "", fanart: attrs.fanart || attrs["tvg-fanart"] || attrs["tvg-logo"] || "", category, is247: type.kind === "tv" && is247Channel(title, attrs), ...location, ...type,
     });
     pending = null;
   }
@@ -81,18 +139,18 @@ async function loadEntries(force = false) {
   return entries;
 }
 
-function catalogItems(entries, kind, search = "") {
+function catalogItems(entries, kind, search = "", mode = "all") {
   const needle = search.toLocaleLowerCase();
-  const filtered = entries.filter((entry) => entry.kind === kind && (!needle || `${entry.title} ${entry.name} ${entry.category}`.toLocaleLowerCase().includes(needle)));
+  const filtered = entries.filter((entry) => entry.kind === kind && (mode === "247" ? entry.is247 : mode === "regular" ? !entry.is247 : true) && (!needle || `${entry.title} ${entry.name} ${entry.category} ${entry.region} ${entry.country} ${entry.language} ${entry.is247 ? "24/7 always on" : "regular"}`.toLocaleLowerCase().includes(needle)));
   const unique = kind === "series" ? [...new Map(filtered.map((entry) => [entry.name.toLocaleLowerCase(), entry])).values()] : filtered;
-  return unique.sort((a, b) => a.category.localeCompare(b.category) || a.title.localeCompare(b.title)).map((entry) => ({
+  return unique.sort((a, b) => a.region.localeCompare(b.region) || a.country.localeCompare(b.country) || a.category.localeCompare(b.category) || a.title.localeCompare(b.title)).map((entry) => ({
     id: entry.id,
     type: kind === "series" ? "series" : kind,
-    name: kind === "series" ? entry.name : entry.title,
+    name: kind === "tv" ? `${entry.region} · ${entry.country} · ${entry.title}` : kind === "series" ? entry.name : entry.title,
     poster: entry.poster || entry.logo,
     posterShape: kind === "tv" ? "landscape" : "poster",
-    description: entry.category,
-    genres: [entry.category],
+    description: `${entry.is247 ? "24/7 / " : ""}${entry.region} / ${entry.country} / ${entry.category}${entry.language !== "Unknown" ? ` / ${entry.language}` : ""}`,
+    genres: [entry.region, entry.country, entry.category, entry.language].filter((value) => value && value !== "Unknown"),
   }));
 }
 
@@ -129,7 +187,9 @@ const manifest = {
   resources: ["catalog", "meta", "stream"],
   types: ["tv", "movie", "series"],
   catalogs: [
-    { type: "tv", id: "xtream-tv", name: "Live TV", extra: [{ name: "search", isRequired: false }] },
+    { type: "tv", id: "xtream-tv", name: "Live TV · Regional Channels", extra: [{ name: "search", isRequired: false }] },
+    { type: "tv", id: "xtream-tv-247", name: "Live TV · 24/7 Channels", extra: [{ name: "search", isRequired: false }] },
+    { type: "tv", id: "xtream-tv-all", name: "Live TV · All Channels", extra: [{ name: "search", isRequired: false }] },
     { type: "movie", id: "xtream-movies", name: "Movies", extra: [{ name: "search", isRequired: false }] },
     { type: "series", id: "xtream-series", name: "TV Shows", extra: [{ name: "search", isRequired: false }] },
   ],
@@ -145,7 +205,9 @@ async function handle(req, res) {
     if (parts[0] === "catalog" && parts.length >= 3) {
       const type = parts[1] === "series" ? "series" : parts[1] === "movie" ? "movie" : "tv";
       const search = url.searchParams.get("search") || "";
-      return json(res, 200, { metas: catalogItems(entries, type, search) });
+      const catalogId = parts[2];
+      const mode = catalogId === "xtream-tv-247" ? "247" : catalogId === "xtream-tv" ? "regular" : "all";
+      return json(res, 200, { metas: catalogItems(entries, type, search, mode) });
     }
     if (parts[0] === "meta" && parts.length >= 3) return json(res, 200, { meta: metaFor(entries, parts[1], parts[2]) || {} });
     if (parts[0] === "stream" && parts.length >= 3) {
@@ -162,4 +224,4 @@ async function handle(req, res) {
 
 http.createServer(handle).listen(PORT, "0.0.0.0", () => console.log(`Xtream Stremio addon listening on port ${PORT}; refresh interval: 60 minutes`));
 
-module.exports = { parseM3U, classify, REFRESH_MS };
+module.exports = { parseM3U, classify, is247Channel, REFRESH_MS };

@@ -7,6 +7,14 @@ from urllib.parse import quote
 def safe(value, fallback=''):
     return str(value or fallback).replace('\n', ' ').replace('"', "'").strip()
 
+def flatten(items):
+    for item in items or []:
+        if isinstance(item, list):
+            yield from flatten(item)
+        elif isinstance(item, dict):
+            yield item
+
+
 def main():
     p = argparse.ArgumentParser()
     p.add_argument('--m3u', type=Path, required=True)
@@ -26,13 +34,15 @@ def main():
         except json.JSONDecodeError: continue
         show = record.get('show') or {}; detail = record.get('detail') or {}
         show_name = safe(show.get('name'), f"Series {show.get('series_id', '')}")
-        group = 'VOD / TV Shows / ' + safe(show.get('category_name'), 'Uncategorised')
+        category = safe(show.get('category_name'), 'Uncategorised')
         logo = safe(show.get('cover'))
         added_show = False
-        for season_key, season_items in (detail.get('episodes') or {}).items():
+        episodes_data = detail.get('episodes') or {}
+        season_groups = episodes_data.items() if isinstance(episodes_data, dict) else [('1', episodes_data)]
+        for season_key, season_items in season_groups:
             try: season = int(season_key)
             except (TypeError, ValueError): season = 1
-            for index, episode in enumerate(season_items or [], 1):
+            for index, episode in enumerate(flatten(season_items), 1):
                 episode_id = episode.get('id')
                 if not episode_id: continue
                 try: number = int(episode.get('episode_num') or index)
@@ -42,6 +52,7 @@ def main():
                 if label in existing: continue
                 ext = safe(episode.get('container_extension'), 'mp4')
                 image = safe((episode.get('info') or {}).get('movie_image') or logo)
+                group = f'VOD / TV Shows / {category} / {show_name} / Season {season:02d}'
                 attrs = [f'tvg-name="{label}"', f'group-title="{group}"']
                 if image: attrs.append(f'tvg-logo="{image}"')
                 attrs.append(f'media-type="episode"')

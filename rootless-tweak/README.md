@@ -17,7 +17,11 @@ The rootless package will be generated under `packages/` as an `iphoneos-arm64` 
 
 ## Install
 
-Transfer the final `.deb` to the jailbroken iPhone and install it with Sileo, Zebra, or another rootless package manager. A SpringBoard reload may be requested after installation. The package must be installed only on a device you own or administer.
+Transfer the final `.deb` to the jailbroken iPhone and install it with Sileo, Zebra, or another rootless package manager. The package does not run `uicache` or respring during the dpkg transaction because that can interrupt Sileo.
+
+After installation completes, use Dopamine’s **Refresh Jailbreak Apps** action, then respring. Rootless jailbreaks can lose app icons when the icon cache reloads; this is a jailbreak/SpringBoard limitation rather than a missing `Info.plist`. Dopamine reported this behavior as fixed in version 2.1. If the device is on an older Dopamine release, update Dopamine before troubleshooting the package. As a terminal fallback, run `uicache -p /var/jb/Applications/XtreamPlaylistManager.app` followed by `sbreload` after Sileo has fully finished.
+
+The package must be installed only on a device you own or administer.
 
 ## GitHub token
 

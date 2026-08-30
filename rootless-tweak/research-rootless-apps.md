@@ -1,0 +1,3 @@
+Dopamine issue #403 reports that newly installed jailbreak app icons may not appear until the jailbreak app is refreshed. Dopamine issue #496 states that rootless jailbreak apps can disappear when the icon cache reloads, and the maintainer marked that issue fixed in Dopamine 2.1. Sources: https://github.com/opa334/Dopamine/issues/403 and https://github.com/opa334/Dopamine/issues/496
+
+Implication: if the device is running Dopamine below 2.1, no package-only plist change can guarantee persistent SpringBoard visibility. The user should update Dopamine or use its jailbreak-app refresh function. For a package fix, avoid triggering icon-cache operations during dpkg; provide a separate post-install command instead.

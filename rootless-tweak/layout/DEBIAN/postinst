@@ -1,0 +1,6 @@
+#!/bin/sh
+set -e
+# Rootless package managers place this payload below /var/jb.
+# Reload SpringBoard when supported; failure is non-fatal for package installs.
+command -v sbreload >/dev/null 2>&1 && sbreload || true
+exit 0

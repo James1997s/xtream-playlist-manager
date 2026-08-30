@@ -1,0 +1,9 @@
+Package: com.james.xtplaylistcompanion
+Name: XTPlaylist Companion Tweak
+Version: 0.1.0
+Architecture: iphoneos-arm64
+Description: Rootless SpringBoard companion hook for XTPlaylist Companion
+Maintainer: James1997s
+Section: Tweaks
+Priority: optional
+Depends: firmware (>= 15.0)

@@ -1,0 +1,13 @@
+{
+  "name": "xtream-playlist-stremio-addon",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Stremio addon for organised Xtream/M3U live TV, movies, TV shows, categories and search",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
     <key>CFBundleDisplayName</key>
-    <string>Xtream Playlist Manager</string>
+    <string>XDREAM</string>
     <key>CFBundleExecutable</key>
     <string>XtreamPlaylistManager</string>
     <key>CFBundleIdentifier</key>
     <string>com.james.xtream-playlist-manager</string>
     <key>CFBundleName</key>
-    <string>XtreamPlaylistManager</string>
+    <string>XDREAM</string>
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleShortVersionString</key>

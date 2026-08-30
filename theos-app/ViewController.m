@@ -14,7 +14,7 @@ static NSString * const kPlaylistURL = @"https://raw.githubusercontent.com/James
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"Xtream Playlist";
+    self.title = @"XDREAM";
     self.view.backgroundColor = UIColor.systemBackgroundColor;
     self.serverField = [self field:@"Server URL" secure:NO];
     self.userField = [self field:@"Username" secure:NO];

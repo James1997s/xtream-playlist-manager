@@ -21,7 +21,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             Form {
-                Section("GitHub playlist") {
+                Section("GitHub file") {
                     TextField("Owner", text: $owner).autocapitalization(.none)
                     TextField("Repository", text: $repo).autocapitalization(.none)
                     TextField("Branch", text: $branch).autocapitalization(.none)
@@ -30,7 +30,7 @@ struct ContentView: View {
                     Text("Use a fine-grained token limited to this repository with Contents: Read and write. It is stored only in Keychain.")
                         .font(.footnote).foregroundColor(.secondary)
                 }
-                Section("New Xtream details") {
+                Section("Xtream details") {
                     TextField("Server URL", text: $server)
                         .keyboardType(.URL).textContentType(.URL).autocapitalization(.none)
                     TextField("Username", text: $username)
@@ -38,8 +38,8 @@ struct ContentView: View {
                     SecureField("Password", text: $password).textContentType(.password)
                 }
                 Section {
-                    Button(isBusy ? "Updating…" : "Update playlist on GitHub") {
-                        Task { await updatePlaylist() }
+                    Button(isBusy ? "Updating…" : "Update Xtream details") {
+                        Task { await updateXtreamDetails() }
                     }.disabled(isBusy)
                     Button("Save details on this device") {
                         saveLocal(); status = "Saved locally in Keychain."
@@ -49,7 +49,7 @@ struct ContentView: View {
                     Text(status).font(.footnote)
                 }
             }
-            .navigationTitle("Xtream Companion")
+            .navigationTitle("XDREAM")
         }
     }
 
@@ -64,7 +64,7 @@ struct ContentView: View {
         KeychainStore.set(password, for: "xtream.password")
     }
 
-    private func updatePlaylist() async {
+    private func updateXtreamDetails() async {
         guard !owner.isEmpty, !repo.isEmpty, !branch.isEmpty, !path.isEmpty,
               !token.isEmpty, !server.isEmpty, !username.isEmpty, !password.isEmpty else {
             status = "Complete every field before updating."; return
@@ -81,8 +81,8 @@ struct ContentView: View {
             }
             try await client.write(owner: owner, repo: repo, path: path, branch: branch,
                                    content: rewritten.content, sha: current.sha,
-                                   message: "Update Xtream playlist details")
-            status = "Updated \(rewritten.count) playlist URL(s) on GitHub."
+                                   message: "Update Xtream details only")
+            status = "Updated Xtream details in \\(rewritten.count) existing URL(s). No playlist refresh was performed."
         } catch {
             status = "Update failed: \(error.localizedDescription)"
         }

@@ -19,7 +19,7 @@ mkdir -p "$STAGE/DEBIAN"
 cat > "$STAGE/DEBIAN/control" <<'EOF'
 Package: com.james.xtplaylistcompanion
 Name: XTPlaylist Companion
-Version: 0.1.1
+Version: 0.1.2
 Architecture: iphoneos-arm64
 Description: Unsigned rootless Xtream companion app and SpringBoard tweak
  A rootless iOS 15 companion package with an arm64 UIKit app bundle and tweak payload.
@@ -36,6 +36,6 @@ command -v sbreload >/dev/null 2>&1 && sbreload || true
 exit 0
 EOF
 chmod 0755 "$STAGE/DEBIAN/postinst"
-dpkg-deb --root-owner-group --build "$STAGE" "$OUT/com.james.xtplaylistcompanion_0.1.1_iphoneos-arm64.deb"
+dpkg-deb --root-owner-group --build "$STAGE" "$OUT/com.james.xtplaylistcompanion_0.1.2_iphoneos-arm64.deb"
 rm -rf "$STAGE" "$ROOT/.XTPlaylistCompanion.o" "$ROOT/.XTPlaylistCompanion.dylib"
-printf '%s\\n' "$OUT/com.james.xtplaylistcompanion_0.1.1_iphoneos-arm64.deb"
+printf '%s\\n' "$OUT/com.james.xtplaylistcompanion_0.1.2_iphoneos-arm64.deb"

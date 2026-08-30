@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta charset="utf-8">
+<title>XDREAM</title>
+<style>
+:root { color-scheme: dark; font: -apple-system-body; }
+body { margin: 0; padding: 22px 16px 40px; background:#111827; color:#f9fafb; }
+h1 { font-size: 30px; margin: 0 0 4px; } p { color:#aab5c5; line-height:1.4; }
+label { display:block; margin:16px 0 6px; color:#cbd5e1; font-size:14px; }
+input { box-sizing:border-box; width:100%; padding:12px; border:1px solid #475569; border-radius:10px; background:#1e293b; color:#fff; font-size:16px; }
+button { width:100%; margin-top:22px; padding:14px; border:0; border-radius:10px; background:#38bdf8; color:#082f49; font-weight:700; font-size:16px; }
+#status { white-space:pre-wrap; margin-top:18px; padding:12px; border-radius:10px; background:#1e293b; color:#cbd5e1; }
+.small { font-size:12px; }
+</style>
+</head>
+<body>
+<h1>XDREAM</h1>
+<p>Change Xtream details in the existing GitHub M3U file. This does not contact the Xtream API or refresh/regenerate the playlist.</p>
+<label>GitHub owner</label><input id="owner" value="James1997s" autocapitalize="none">
+<label>Repository</label><input id="repo" value="xtream-playlist-manager" autocapitalize="none">
+<label>Branch</label><input id="branch" value="main" autocapitalize="none">
+<label>File path</label><input id="path" value="playlist.m3u" autocapitalize="none">
+<label>GitHub token</label><input id="token" type="password" autocomplete="off">
+<p class="small">The token stays in memory only and is cleared when this page is closed. Use a fine-grained token with Contents read/write for this repository.</p>
+<label>New Xtream server URL</label><input id="server" placeholder="https://server.example" autocapitalize="none">
+<label>New username</label><input id="user" autocapitalize="none">
+<label>New password</label><input id="pass" type="password" autocomplete="off">
+<button id="update">Update Xtream details only</button>
+<div id="status">Ready.</div>
+<script>
+const $ = id => document.getElementById(id);
+const status = text => $('status').textContent = text;
+function serverBase(value) {
+  value = value.trim();
+  if (!/^https?:\/\//i.test(value)) value = 'http://' + value;
+  return value.replace(/\/+$/, '');
+}
+function segment(value) { return encodeURIComponent(value); }
+$('update').onclick = async () => {
+  const owner=$('owner').value.trim(), repo=$('repo').value.trim(), branch=$('branch').value.trim(), path=$('path').value.trim();
+  const token=$('token').value, server=serverBase($('server').value), user=$('user').value, pass=$('pass').value;
+  if (!owner || !repo || !branch || !path || !token || !server || !user || !pass) return status('Complete every field.');
+  $('update').disabled = true; status('Reading the existing file…');
+  try {
+    const endpoint = `https://api.github.com/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/contents/${path.split('/').map(encodeURIComponent).join('/')}?ref=${encodeURIComponent(branch)}`;
+    const headers = { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github+json' };
+    const read = await fetch(endpoint, {headers});
+    if (!read.ok) throw new Error(`GitHub read failed (${read.status})`);
+    const file = await read.json();
+    const oldText = atob(file.content.replace(/\s/g,''));
+    const re = /(https?:\/\/)[^\/\s]+\/(live|movie|series)\/[^\/\s]+\/[^\/\s]+\//ig;
+    let count = 0;
+    const newText = oldText.replace(re, (_, protocol, kind) => { count++; return `${protocol}${server.replace(/^https?:\/\//i,'')}/${kind}/${segment(user)}/${segment(pass)}/`; });
+    if (!count) throw new Error('No existing Xtream stream URLs were found. Nothing changed.');
+    status(`Writing ${count} existing Xtream URL(s)…`);
+    const write = await fetch(endpoint, {method:'PUT', headers:{...headers,'Content-Type':'application/json'}, body:JSON.stringify({message:'Update Xtream details only',content:btoa(unescape(encodeURIComponent(newText))),sha:file.sha,branch})});
+    if (!write.ok) throw new Error(`GitHub write failed (${write.status})`);
+    status(`Updated ${count} existing Xtream URL(s). No playlist refresh or API generation was performed.`);
+  } catch (e) { status(`Error: ${e.message}`); }
+  finally { $('update').disabled = false; }
+};
+</script>
+</body>
+</html>

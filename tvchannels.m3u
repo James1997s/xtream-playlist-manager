@@ -1,4 +1,4 @@
-#EXTM3U
+#EXTM3U url-tvg="http://kytv.xyz/xmltv.php?username=try50271&password=00284165"
 # TV channels only; generated from Xtream live streams
 #EXTINF:-1 tvg-name="USA AMC" group-title="USA Entertainment" tvg-logo="http://23.227.147.172:80/images/970fd4a37554c8e2229b0e660999c7dc.png",USA AMC
 http://kytv.xyz/live/try50271/00284165/175787.m3u8

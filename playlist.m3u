@@ -1,474 +1,474 @@
-#EXTM3U url-tvg="http://xpqsfdaj.kchmzoth.com/xmltv.php?username=KdZTxqR8&password=2ZZNTXG5"
+#EXTM3U url-tvg="http://xpqsfdaj.kchmzoth.com/xmltv.php?username=XMQj0T91&password=N3A21U3"
 # UK SD TV channels only; VOD, series, HD, UHD, 4K, and HEVC excluded
 #EXTINF:-1 tvg-name="UK| BBC 1 [BK]" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/bbc1.png",UK| BBC 1 [BK]
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/883284.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/883284.m3u8
 #EXTINF:-1 tvg-name="UK| BBC 2 [BK]" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/bbc2.png",UK| BBC 2 [BK]
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/883283.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/883283.m3u8
 #EXTINF:-1 tvg-name="UK| ITV 1 [BK]" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/itv0.png",UK| ITV 1 [BK]
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/883282.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/883282.m3u8
 #EXTINF:-1 tvg-name="UK| (ITVX) ITV1" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/itv0.png",UK| (ITVX) ITV1
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/933150.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/933150.m3u8
 #EXTINF:-1 tvg-name="UK| ITV 2 [BK]" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/itv20.png",UK| ITV 2 [BK]
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/883281.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/883281.m3u8
 #EXTINF:-1 tvg-name="UK| (ITVX) ITV2" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/itv0.png",UK| (ITVX) ITV2
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/933151.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/933151.m3u8
 #EXTINF:-1 tvg-name="UK| ITV 3 [BK]" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/itv30.png",UK| ITV 3 [BK]
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/883280.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/883280.m3u8
 #EXTINF:-1 tvg-name="UK| (ITVX) ITV3" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/itv0.png",UK| (ITVX) ITV3
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/933152.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/933152.m3u8
 #EXTINF:-1 tvg-name="UK| ITV 4 [BK]" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/itv40.png",UK| ITV 4 [BK]
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/883279.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/883279.m3u8
 #EXTINF:-1 tvg-name="UK| (ITVX) ITV4" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/itv0.png",UK| (ITVX) ITV4
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/933153.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/933153.m3u8
 #EXTINF:-1 tvg-name="UK| CHANNEL 4 [BK]" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/chal4.png",UK| CHANNEL 4 [BK]
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/883278.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/883278.m3u8
 #EXTINF:-1 tvg-name="UK| CHANNEL 5 [BK]" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/chal5.png",UK| CHANNEL 5 [BK]
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/883277.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/883277.m3u8
 #EXTINF:-1 tvg-name="UK| E4 EXTRA" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/e40.png",UK| E4 EXTRA
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1046581.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1046581.m3u8
 #EXTINF:-1 tvg-name="✦●✦ GENERAL SD✦●✦" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/flg.png",✦●✦ GENERAL SD✦●✦
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/125650.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/125650.m3u8
 #EXTINF:-1 tvg-name="UK| BBC 1 SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/bbc1.png",UK| BBC 1 SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34330.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34330.m3u8
 #EXTINF:-1 tvg-name="UK| BBC 2 SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/bbc2.png",UK| BBC 2 SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34329.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34329.m3u8
 #EXTINF:-1 tvg-name="UK| BBC 3 SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/BBC 3.png",UK| BBC 3 SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/6367.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/6367.m3u8
 #EXTINF:-1 tvg-name="UK| BBC 4 / CBEEBIES SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/bbc4.png",UK| BBC 4 / CBEEBIES SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34086.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34086.m3u8
 #EXTINF:-1 tvg-name="UK| ITV 1 SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/itv0.png",UK| ITV 1 SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/28974.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/28974.m3u8
 #EXTINF:-1 tvg-name="UK| ITV 2 SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/itv20.png",UK| ITV 2 SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/2288.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/2288.m3u8
 #EXTINF:-1 tvg-name="UK| ITV 2+1 SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/itv20.png",UK| ITV 2+1 SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/164248.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/164248.m3u8
 #EXTINF:-1 tvg-name="UK| ITV 3 SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/itv30.png",UK| ITV 3 SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34389.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34389.m3u8
 #EXTINF:-1 tvg-name="UK| ITV 3+1 SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/itv3.png",UK| ITV 3+1 SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/164236.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/164236.m3u8
 #EXTINF:-1 tvg-name="UK| ITV 4 SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/itv40.png",UK| ITV 4 SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34390.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34390.m3u8
 #EXTINF:-1 tvg-name="UK| CHANNEL 5 SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/chal5.png",UK| CHANNEL 5 SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34324.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34324.m3u8
 #EXTINF:-1 tvg-name="UK| CHANNEL 4 SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/chal4.png",UK| CHANNEL 4 SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34323.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34323.m3u8
 #EXTINF:-1 tvg-name="UK| CHANNEL 4+1 SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/chal4.png",UK| CHANNEL 4+1 SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/164243.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/164243.m3u8
 #EXTINF:-1 tvg-name="UK| E4 SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/e40.png",UK| E4 SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34149.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34149.m3u8
 #EXTINF:-1 tvg-name="UK| BBC NEWS SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/bbcns.png",UK| BBC NEWS SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/2281.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/2281.m3u8
 #EXTINF:-1 tvg-name="UK| BBC WORLD NEWS SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/fr/bbcwnewss.png",UK| BBC WORLD NEWS SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/6678.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/6678.m3u8
 #EXTINF:-1 tvg-name="UK| CNN SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/cnn.png",UK| CNN SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34282.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34282.m3u8
 #EXTINF:-1 tvg-name="UK| SKY NEWS SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/skyns.png",UK| SKY NEWS SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34104.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34104.m3u8
 #EXTINF:-1 tvg-name="UK| UTV SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/utv.png",UK| UTV SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/2253.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/2253.m3u8
 #EXTINF:-1 tvg-name="UK| VIRGIN ONE SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/virgn.png",UK| VIRGIN ONE SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/164251.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/164251.m3u8
 #EXTINF:-1 tvg-name="UK| AL JAZEERA SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/aljz.png",UK| AL JAZEERA SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/164250.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/164250.m3u8
 #EXTINF:-1 tvg-name="UK| EURO NEWS SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/eurns.png",UK| EURO NEWS SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/29115.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/29115.m3u8
 #EXTINF:-1 tvg-name="UK| GB NEWS SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/gb0.png",UK| GB NEWS SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/149594.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/149594.m3u8
 #EXTINF:-1 tvg-name="UK| FOX NEWS SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/FOX NEWS.png",UK| FOX NEWS SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/6558.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/6558.m3u8
 #EXTINF:-1 tvg-name="UK| ABP NEWS SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/abpns.png",UK| ABP NEWS SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34322.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34322.m3u8
 #EXTINF:-1 tvg-name="UK| BBC ALBA SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/bbcalb.png",UK| BBC ALBA SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34085.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34085.m3u8
 #EXTINF:-1 tvg-name="UK| 4SEVEN SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/4sev.png",UK| 4SEVEN SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/941432.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/941432.m3u8
 #EXTINF:-1 tvg-name="UK| STV SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/stv1.png",UK| STV SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34061.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34061.m3u8
 #EXTINF:-1 tvg-name="UK| STV EAST SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/stv1.png",UK| STV EAST SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34089.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34089.m3u8
 #EXTINF:-1 tvg-name="UK| STV WEST SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/stv1.png",UK| STV WEST SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34078.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34078.m3u8
 #EXTINF:-1 tvg-name="UK| S4C SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/s4c.png",UK| S4C SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34111.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34111.m3u8
 #EXTINF:-1 tvg-name="UK| TAKBEER TV SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/takb.png",UK| TAKBEER TV SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34074.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34074.m3u8
 #EXTINF:-1 tvg-name="UK| ALIBI SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/alibi.png",UK| ALIBI SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/164237.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/164237.m3u8
 #EXTINF:-1 tvg-name="UK| BLOOMBERG SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/blomb.png",UK| BLOOMBERG SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/164235.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/164235.m3u8
 #EXTINF:-1 tvg-name="UK| CHSTV SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/flg.png",UK| CHSTV SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/19166.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/19166.m3u8
 #EXTINF:-1 tvg-name="✦●✦ UK RELIGIOUS ✦●✦" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/flg.png",✦●✦ UK RELIGIOUS ✦●✦
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/29138.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/29138.m3u8
 #EXTINF:-1 tvg-name="UK| KICC TV SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/kic.png",UK| KICC TV SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34387.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34387.m3u8
 #EXTINF:-1 tvg-name="UK| EMAN CHANNEL" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/eman.png",UK| EMAN CHANNEL
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34171.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34171.m3u8
 #EXTINF:-1 tvg-name="UK| FAITH WORLD TV SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/faitwl.png",UK| FAITH WORLD TV SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34172.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34172.m3u8
 #EXTINF:-1 tvg-name="UK| GOD CHANNEL SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/godch.png",UK| GOD CHANNEL SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34195.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34195.m3u8
 #EXTINF:-1 tvg-name="UK| HIDAYAT TV SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/hidy.png",UK| HIDAYAT TV SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34203.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34203.m3u8
 #EXTINF:-1 tvg-name="UK| NOOR TV SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/nor.png",UK| NOOR TV SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34358.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34358.m3u8
 #EXTINF:-1 tvg-name="UK| DEEN TV SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/DEEN TV.png",UK| DEEN TV SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/164254.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/164254.m3u8
 #EXTINF:-1 tvg-name="UK| ISLAM CHANNEL SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/isla.png",UK| ISLAM CHANNEL SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/164253.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/164253.m3u8
 #EXTINF:-1 tvg-name="✦●✦UK LOCAL REGIONALS✦●✦" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/flg.png",✦●✦UK LOCAL REGIONALS✦●✦
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/29125.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/29125.m3u8
 #EXTINF:-1 tvg-name="UK| BBC ONE SOUTH SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/bbc1.png",UK| BBC ONE SOUTH SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34099.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34099.m3u8
 #EXTINF:-1 tvg-name="UK| BBC ONE SOUTH EAST SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/bbc1.png",UK| BBC ONE SOUTH EAST SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34098.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34098.m3u8
 #EXTINF:-1 tvg-name="UK| BBC ONE SOUTH WEST SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/bbc1.png",UK| BBC ONE SOUTH WEST SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34097.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34097.m3u8
 #EXTINF:-1 tvg-name="UK| BBC ONE NORTH WEST SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/bbc1.png",UK| BBC ONE NORTH WEST SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34092.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34092.m3u8
 #EXTINF:-1 tvg-name="UK| BBC ONE WEST SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/bbc1.png",UK| BBC ONE WEST SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34096.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34096.m3u8
 #EXTINF:-1 tvg-name="UK| BBC ONE WEST" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/bbc1.png",UK| BBC ONE WEST
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/29131.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/29131.m3u8
 #EXTINF:-1 tvg-name="UK| BBC ONE SCOTLAND SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/bbc1.png",UK| BBC ONE SCOTLAND SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/164238.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/164238.m3u8
 #EXTINF:-1 tvg-name="UK| BBC ONE LONDON SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/bbc1.png",UK| BBC ONE LONDON SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34090.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34090.m3u8
 #EXTINF:-1 tvg-name="UK| BBC ONE YORKSHIRE & NORTH MIDLANDS SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/bbc1.png",UK| BBC ONE YORKSHIRE & NORTH MIDLANDS SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/33850.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/33850.m3u8
 #EXTINF:-1 tvg-name="UK| BBC ONE YORK SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/bbc1.png",UK| BBC ONE YORK SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/6677.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/6677.m3u8
 #EXTINF:-1 tvg-name="UK| BBC ONE CHANNEL ISLANDS SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/bbc1.png",UK| BBC ONE CHANNEL ISLANDS SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34087.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34087.m3u8
 #EXTINF:-1 tvg-name="UK| BBC TWO ENGLAND SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/bbc2.png",UK| BBC TWO ENGLAND SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/6676.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/6676.m3u8
 #EXTINF:-1 tvg-name="UK| BBC PARLIAMENT SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/BBC PARLIAMENT.png",UK| BBC PARLIAMENT SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/29113.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/29113.m3u8
 #EXTINF:-1 tvg-name="UK| BBC SCOTLAND SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/bbc.png",UK| BBC SCOTLAND SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34095.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34095.m3u8
 #EXTINF:-1 tvg-name="UK| CHANNEL 4 NORTHEN IRELAND SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/chal4.png",UK| CHANNEL 4 NORTHEN IRELAND SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/6556.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/6556.m3u8
 #EXTINF:-1 tvg-name="UK| CHANNEL 4+1 SOUTH & EAST SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/chal4.png",UK| CHANNEL 4+1 SOUTH & EAST SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/164245.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/164245.m3u8
 #EXTINF:-1 tvg-name="UK| ITV 1 GRANADA +1 SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/itv15.png",UK| ITV 1 GRANADA +1 SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/164241.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/164241.m3u8
 #EXTINF:-1 tvg-name="UK| ITV GRANADA SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/itv15.png",UK| ITV GRANADA SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/29137.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/29137.m3u8
 #EXTINF:-1 tvg-name="UK| ITV TYNE TEES SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/itv19.png",UK| ITV TYNE TEES SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34068.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34068.m3u8
 #EXTINF:-1 tvg-name="UK| ITV WALES SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/itv21.png",UK| ITV WALES SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34069.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34069.m3u8
 #EXTINF:-1 tvg-name="UK| ITV CENTRAL EAST SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/itv17.png",UK| ITV CENTRAL EAST SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34065.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34065.m3u8
 #EXTINF:-1 tvg-name="UK| ITV MERIDIAN EAST SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/itv18.png",UK| ITV MERIDIAN EAST SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34066.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34066.m3u8
 #EXTINF:-1 tvg-name="UK| ITV YORKSHIRE WEST SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/itv20.png",UK| ITV YORKSHIRE WEST SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34073.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34073.m3u8
 #EXTINF:-1 tvg-name="UK| ITV ANGLIA EAST SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/itv123.png",UK| ITV ANGLIA EAST SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34063.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34063.m3u8
 #EXTINF:-1 tvg-name="UK| ITV LONDON SD" group-title="EU | UK GENERAL" tvg-logo="https://lo1.in/uk/itv16.png",UK| ITV LONDON SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/33854.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/33854.m3u8
 #EXTINF:-1 tvg-name="UK| THE CHAT SHOW CHANNEL" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/flg.png",UK| THE CHAT SHOW CHANNEL
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1105676.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1105676.m3u8
 #EXTINF:-1 tvg-name="✦●✦ ENTERTAINMENT SD ✦●✦" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/flgk.png",✦●✦ ENTERTAINMENT SD ✦●✦
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/28969.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/28969.m3u8
 #EXTINF:-1 tvg-name="UK| SKY ARTS SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/skyart.png",UK| SKY ARTS SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34109.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34109.m3u8
 #EXTINF:-1 tvg-name="UK| SKY ATLANTIC SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/SKY ATLANTIC.png",UK| SKY ATLANTIC SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34108.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34108.m3u8
 #EXTINF:-1 tvg-name="UK| SKY WITNESS SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/skywtn.png",UK| SKY WITNESS SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34100.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34100.m3u8
 #EXTINF:-1 tvg-name="UK| Sky MAX SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/alb/skymx.png",UK| Sky MAX SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/718.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/718.m3u8
 #EXTINF:-1 tvg-name="UK| SKY TWO SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/sky2.png",UK| SKY TWO SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34101.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34101.m3u8
 #EXTINF:-1 tvg-name="UK| SKY COMEDY SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/SkyComedy.png",UK| SKY COMEDY SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1108010.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1108010.m3u8
 #EXTINF:-1 tvg-name="UK| ATN BANGLA UK SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/atnbn.png",UK| ATN BANGLA UK SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34331.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34331.m3u8
 #EXTINF:-1 tvg-name="UK| BEST DIRECT SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/besdr.png",UK| BEST DIRECT SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/33830.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/33830.m3u8
 #EXTINF:-1 tvg-name="UK| CBS REALITY SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/cbsrl.png",UK| CBS REALITY SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34327.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34327.m3u8
 #EXTINF:-1 tvg-name="UK| CHALLENGE SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/chal.png",UK| CHALLENGE SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34328.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34328.m3u8
 #EXTINF:-1 tvg-name="UK| COMEDY CENTRAL SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/cmdcen.png",UK| COMEDY CENTRAL SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34278.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34278.m3u8
 #EXTINF:-1 tvg-name="UK| COMEDY XTRA SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/cmdxt.png",UK| COMEDY XTRA SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34281.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34281.m3u8
 #EXTINF:-1 tvg-name="UK| 5 SELECT SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/5sel.png",UK| 5 SELECT SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34341.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34341.m3u8
 #EXTINF:-1 tvg-name="UK| 5STAR SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/5STAR.png",UK| 5STAR SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34339.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34339.m3u8
 #EXTINF:-1 tvg-name="UK| DAVE SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/DAVE.png",UK| DAVE SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34124.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34124.m3u8
 #EXTINF:-1 tvg-name="UK| DAVE JA-VU SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/davj.png",UK| DAVE JA-VU SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/33829.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/33829.m3u8
 #EXTINF:-1 tvg-name="UK| FOOD NETWORK SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/fodnet.png",UK| FOOD NETWORK SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34192.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34192.m3u8
 #EXTINF:-1 tvg-name="UK| GOLD SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/GOLD.png",UK| GOLD SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34196.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34196.m3u8
 #EXTINF:-1 tvg-name="UK| GOLD+1 SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/GOLD+1.png",UK| GOLD+1 SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/164267.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/164267.m3u8
 #EXTINF:-1 tvg-name="UK| 5 USA SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/5usa.png",UK| 5 USA SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34340.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34340.m3u8
 #EXTINF:-1 tvg-name="UK| ITV QUIZ SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/Quiz.png",UK| ITV QUIZ SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34077.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34077.m3u8
 #EXTINF:-1 tvg-name="UK| PICK SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/pick.png",UK| PICK SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34360.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34360.m3u8
 #EXTINF:-1 tvg-name="UK| QUEST RED SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/red.png",UK| QUEST RED SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34120.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34120.m3u8
 #EXTINF:-1 tvg-name="UK| QUEST SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/que.png",UK| QUEST SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34119.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34119.m3u8
 #EXTINF:-1 tvg-name="UK| QVC BEAUTY SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/qvcbty0.png",UK| QVC BEAUTY SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/29144.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/29144.m3u8
 #EXTINF:-1 tvg-name="UK| QVC EXTRA SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/qvcex.png",UK| QVC EXTRA SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/33817.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/33817.m3u8
 #EXTINF:-1 tvg-name="UK| QVC SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/qvc.png",UK| QVC SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/29142.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/29142.m3u8
 #EXTINF:-1 tvg-name="UK| QVC STYLE SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/qvcsl0.png",UK| QVC STYLE SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/29143.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/29143.m3u8
 #EXTINF:-1 tvg-name="UK| REALLY SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/real.png",UK| REALLY SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34117.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34117.m3u8
 #EXTINF:-1 tvg-name="UK| SHEFFIELD LIVE TV SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/sheflv.png",UK| SHEFFIELD LIVE TV SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34431.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34431.m3u8
 #EXTINF:-1 tvg-name="UK| MORE4 SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/mor4.png",UK| MORE4 SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/29008.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/29008.m3u8
 #EXTINF:-1 tvg-name="UK| MORE4+1 SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/mor4.png",UK| MORE4+1 SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/164265.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/164265.m3u8
 #EXTINF:-1 tvg-name="UK| SONY TV SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/sony.png",UK| SONY TV SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34091.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34091.m3u8
 #EXTINF:-1 tvg-name="UK| SYFY SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/syfy.png",UK| SYFY SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/2239.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/2239.m3u8
 #EXTINF:-1 tvg-name="UK| TLC SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/tlc.png",UK| TLC SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34072.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34072.m3u8
 #EXTINF:-1 tvg-name="UK| TRAVELXP SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/trvlx.png",UK| TRAVELXP SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34071.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34071.m3u8
 #EXTINF:-1 tvg-name="UK| THAT'S TV SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/that.png",UK| THAT'S TV SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/164269.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/164269.m3u8
 #EXTINF:-1 tvg-name="UK| TBN UK SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/tbn.png",UK| TBN UK SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/164268.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/164268.m3u8
 #EXTINF:-1 tvg-name="UK| E4+1 SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/e40.png",UK| E4+1 SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/164266.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/164266.m3u8
 #EXTINF:-1 tvg-name="UK| COURT TV SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/cour.png",UK| COURT TV SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/164264.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/164264.m3u8
 #EXTINF:-1 tvg-name="UK| SKY ONE SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/ger/skyon.png",UK| SKY ONE SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34103.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34103.m3u8
 #EXTINF:-1 tvg-name="UK| WATCH SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/watc.png",UK| WATCH SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/164263.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/164263.m3u8
 #EXTINF:-1 tvg-name="UK| PARAMOUNT NETWORK SD" group-title="EU | UK ENTERTAIMENT" tvg-logo="https://lo1.in/uk/prmnt.png",UK| PARAMOUNT NETWORK SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/6674.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/6674.m3u8
 #EXTINF:-1 tvg-name="UK| (ITVX) Vera" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/itv0.png",UK| (ITVX) Vera
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/933154.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/933154.m3u8
 #EXTINF:-1 tvg-name="UK| SKY STORE PREMIERE 01" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skyst.png",UK| SKY STORE PREMIERE 01
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1019373.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1019373.m3u8
 #EXTINF:-1 tvg-name="UK| SKY STORE PREMIERE 02" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skyst.png",UK| SKY STORE PREMIERE 02
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1019372.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1019372.m3u8
 #EXTINF:-1 tvg-name="UK| SKY STORE PREMIERE 03" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skyst.png",UK| SKY STORE PREMIERE 03
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1019371.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1019371.m3u8
 #EXTINF:-1 tvg-name="UK| SKY STORE PREMIERE 04" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skyst.png",UK| SKY STORE PREMIERE 04
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1019370.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1019370.m3u8
 #EXTINF:-1 tvg-name="UK| SKY STORE PREMIERE 05" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skyst.png",UK| SKY STORE PREMIERE 05
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1019369.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1019369.m3u8
 #EXTINF:-1 tvg-name="UK| SKY STORE PREMIERE 06" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skyst.png",UK| SKY STORE PREMIERE 06
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1019368.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1019368.m3u8
 #EXTINF:-1 tvg-name="UK| SKY STORE PREMIERE 07" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skyst.png",UK| SKY STORE PREMIERE 07
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1019367.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1019367.m3u8
 #EXTINF:-1 tvg-name="UK| SKY STORE PREMIERE 08" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skyst.png",UK| SKY STORE PREMIERE 08
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1019366.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1019366.m3u8
 #EXTINF:-1 tvg-name="UK| SKY STORE PREMIERE 09" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skyst.png",UK| SKY STORE PREMIERE 09
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1019365.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1019365.m3u8
 #EXTINF:-1 tvg-name="UK| SKY STORE PREMIERE 10" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skyst.png",UK| SKY STORE PREMIERE 10
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1019364.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1019364.m3u8
 #EXTINF:-1 tvg-name="UK| SKY STORE PREMIERE 11" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skyst.png",UK| SKY STORE PREMIERE 11
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1019363.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1019363.m3u8
 #EXTINF:-1 tvg-name="UK| SKY STORE PREMIERE 12" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skyst.png",UK| SKY STORE PREMIERE 12
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1019362.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1019362.m3u8
 #EXTINF:-1 tvg-name="UK| SKY STORE PREMIERE 13" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skyst.png",UK| SKY STORE PREMIERE 13
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1019361.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1019361.m3u8
 #EXTINF:-1 tvg-name="UK| SKY STORE PREMIERE 14" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skyst.png",UK| SKY STORE PREMIERE 14
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1019360.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1019360.m3u8
 #EXTINF:-1 tvg-name="UK| SKY STORE PREMIERE 15" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skyst.png",UK| SKY STORE PREMIERE 15
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1019359.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1019359.m3u8
 #EXTINF:-1 tvg-name="UK| SKY STORE PREMIERE 16" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skyst.png",UK| SKY STORE PREMIERE 16
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1019358.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1019358.m3u8
 #EXTINF:-1 tvg-name="UK| SKY STORE PREMIERE 17" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skyst.png",UK| SKY STORE PREMIERE 17
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1019357.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1019357.m3u8
 #EXTINF:-1 tvg-name="UK| SKY STORE PREMIERE 18" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skyst.png",UK| SKY STORE PREMIERE 18
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1019356.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1019356.m3u8
 #EXTINF:-1 tvg-name="UK| SKY STORE PREMIERE 19" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skyst.png",UK| SKY STORE PREMIERE 19
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1019355.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1019355.m3u8
 #EXTINF:-1 tvg-name="UK| SKY STORE PREMIERE 20" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skyst.png",UK| SKY STORE PREMIERE 20
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1019354.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1019354.m3u8
 #EXTINF:-1 tvg-name="UK| SKY STORE PREMIERE 21" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skyst.png",UK| SKY STORE PREMIERE 21
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1019353.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1019353.m3u8
 #EXTINF:-1 tvg-name="UK| SKY STORE PREMIERE 22" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skyst.png",UK| SKY STORE PREMIERE 22
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1320844.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1320844.m3u8
 #EXTINF:-1 tvg-name="UK| SKY STORE PREMIERE 23" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skyst.png",UK| SKY STORE PREMIERE 23
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1320843.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1320843.m3u8
 #EXTINF:-1 tvg-name="UK| SKY STORE PREMIERE 24" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skyst.png",UK| SKY STORE PREMIERE 24
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1320842.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1320842.m3u8
 #EXTINF:-1 tvg-name="UK| SKY STORE PREMIERE 25" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skyst.png",UK| SKY STORE PREMIERE 25
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1320841.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1320841.m3u8
 #EXTINF:-1 tvg-name="UK| SKY STORE PREMIERE 26" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skyst.png",UK| SKY STORE PREMIERE 26
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1320840.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1320840.m3u8
 #EXTINF:-1 tvg-name="UK| SKY STORE PREMIERE 27" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skyst.png",UK| SKY STORE PREMIERE 27
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1320839.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1320839.m3u8
 #EXTINF:-1 tvg-name="UK| SKY STORE PREMIERE 28" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skyst.png",UK| SKY STORE PREMIERE 28
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1320838.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1320838.m3u8
 #EXTINF:-1 tvg-name="UK| SKY STORE PREMIERE 29" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skyst.png",UK| SKY STORE PREMIERE 29
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1320837.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1320837.m3u8
 #EXTINF:-1 tvg-name="UK| SKY STORE PREMIERE 30" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skyst.png",UK| SKY STORE PREMIERE 30
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/1320836.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/1320836.m3u8
 #EXTINF:-1 tvg-name="✦●✦ CINEMA SD✦●✦" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/flgk.png",✦●✦ CINEMA SD✦●✦
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/130421.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/130421.m3u8
 #EXTINF:-1 tvg-name="UK| SKY CINEMA ACTION SD" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skycnac.png",UK| SKY CINEMA ACTION SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/29062.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/29062.m3u8
 #EXTINF:-1 tvg-name="UK| SKY CINEMA COMEDY SD" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skycncmy.png",UK| SKY CINEMA COMEDY SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/29064.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/29064.m3u8
 #EXTINF:-1 tvg-name="UK| SKY CINEMA DRAMA SD" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skycnmdr.png",UK| SKY CINEMA DRAMA SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/29066.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/29066.m3u8
 #EXTINF:-1 tvg-name="UK| SKY CINEMA FAMILY SD" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/SKY CINEMA FAMILY.png",UK| SKY CINEMA FAMILY SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/29060.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/29060.m3u8
 #EXTINF:-1 tvg-name="UK| SKY CINEMA GREATS SD" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skycng.png",UK| SKY CINEMA GREATS SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/29058.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/29058.m3u8
 #EXTINF:-1 tvg-name="UK| SKY CINEMA HITS SD" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/SKY CINEMA HITS.png",UK| SKY CINEMA HITS SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/29056.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/29056.m3u8
 #EXTINF:-1 tvg-name="UK| SKY CINEMA PREMIERE SD" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skycn.png",UK| SKY CINEMA PREMIERE SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/29054.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/29054.m3u8
 #EXTINF:-1 tvg-name="UK| SKY CINEMA SCIFI SD" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skycnsi10.png",UK| SKY CINEMA SCIFI SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/29068.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/29068.m3u8
 #EXTINF:-1 tvg-name="UK| SKY CINEMA THRILLER SD" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/skycntr.png",UK| SKY CINEMA THRILLER SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34107.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34107.m3u8
 #EXTINF:-1 tvg-name="UK| SONY MOVIES SD" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/snymv.png",UK| SONY MOVIES SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/29071.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/29071.m3u8
 #EXTINF:-1 tvg-name="UK| SONY MOVIES ACTION +1 SD" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/sintl.png",UK| SONY MOVIES ACTION +1 SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/29073.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/29073.m3u8
 #EXTINF:-1 tvg-name="UK| SONY CHANNEL SD" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/SONY CHANNEL.png",UK| SONY CHANNEL SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34094.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34094.m3u8
 #EXTINF:-1 tvg-name="UK| LEGEND XTRA SD" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/horch.png",UK| LEGEND XTRA SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/29072.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/29072.m3u8
 #EXTINF:-1 tvg-name="UK| CBS ACTION SD" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/cbcjs.png",UK| CBS ACTION SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/6554.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/6554.m3u8
 #EXTINF:-1 tvg-name="UK| CBS DRAMA SD" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/cbsdr.png",UK| CBS DRAMA SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34326.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34326.m3u8
 #EXTINF:-1 tvg-name="UK| VOX AFRICA SD" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/vxaf.png",UK| VOX AFRICA SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/164259.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/164259.m3u8
 #EXTINF:-1 tvg-name="UK| 5 Action SD" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/flg.png",UK| 5 Action SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/3946.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/3946.m3u8
 #EXTINF:-1 tvg-name="UK| FILM4 SD" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/flm40.png",UK| FILM4 SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34191.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34191.m3u8
 #EXTINF:-1 tvg-name="UK| FILM4+1 SD" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/flm40.png",UK| FILM4+1 SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/164258.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/164258.m3u8
 #EXTINF:-1 tvg-name="UK| TALKING PICTURES TV" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/talkpi.png",UK| TALKING PICTURES TV
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/29074.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/29074.m3u8
 #EXTINF:-1 tvg-name="UK| DRAMA SD" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/dr.png",UK| DRAMA SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34136.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34136.m3u8
 #EXTINF:-1 tvg-name="UK| TCM SD" group-title="EU | UK CINEMA" tvg-logo="https://lo1.in/uk/tcm.png",UK| TCM SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/33852.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/33852.m3u8
 #EXTINF:-1 tvg-name="✦●✦ DOCUMENTRIES SD✦●✦" group-title="EU | UK DOCUMENTRIES" tvg-logo="https://lo1.in/uk/flgk.png",✦●✦ DOCUMENTRIES SD✦●✦
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/130469.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/130469.m3u8
 #EXTINF:-1 tvg-name="UK| ANIMAL PLANET SD" group-title="EU | UK DOCUMENTRIES" tvg-logo="https://lo1.in/uk/anlpl.png",UK| ANIMAL PLANET SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/2240.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/2240.m3u8
 #EXTINF:-1 tvg-name="UK| BLAZE SD" group-title="EU | UK DOCUMENTRIES" tvg-logo="https://lo1.in/uk/blze.png",UK| BLAZE SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/29079.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/29079.m3u8
 #EXTINF:-1 tvg-name="UK| CRIME & INVESTIGATION SD" group-title="EU | UK DOCUMENTRIES" tvg-logo="https://lo1.in/uk/criminv.png",UK| CRIME & INVESTIGATION SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34247.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34247.m3u8
 #EXTINF:-1 tvg-name="UK| DISCOVERY ID SD" group-title="EU | UK DOCUMENTRIES" tvg-logo="https://lo1.in/uk/disid.png",UK| DISCOVERY ID SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/150758.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/150758.m3u8
 #EXTINF:-1 tvg-name="UK| DISCOVERY HISTORY SD" group-title="EU | UK DOCUMENTRIES" tvg-logo="https://lo1.in/uk/disch.png",UK| DISCOVERY HISTORY SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34125.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34125.m3u8
 #EXTINF:-1 tvg-name="UK| DISCOVERY SCIENCE SD" group-title="EU | UK DOCUMENTRIES" tvg-logo="https://lo1.in/uk/discnc.png",UK| DISCOVERY SCIENCE SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34126.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34126.m3u8
 #EXTINF:-1 tvg-name="UK| DISCOVERY CHANNEL SD" group-title="EU | UK DOCUMENTRIES" tvg-logo="https://lo1.in/uk/disvry.png",UK| DISCOVERY CHANNEL SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34135.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34135.m3u8
 #EXTINF:-1 tvg-name="UK| DISCOVERY TURBO +1 SD" group-title="EU | UK DOCUMENTRIES" tvg-logo="https://lo1.in/uk/distrb.png",UK| DISCOVERY TURBO +1 SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34060.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34060.m3u8
 #EXTINF:-1 tvg-name="UK| DISCOVERY TURBO SD" group-title="EU | UK DOCUMENTRIES" tvg-logo="https://lo1.in/uk/distrb.png",UK| DISCOVERY TURBO SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34134.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34134.m3u8
 #EXTINF:-1 tvg-name="UK| DMAX SD" group-title="EU | UK DOCUMENTRIES" tvg-logo="https://lo1.in/uk/dmax.png",UK| DMAX SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/33828.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/33828.m3u8
 #EXTINF:-1 tvg-name="UK| EDEN SD" group-title="EU | UK DOCUMENTRIES" tvg-logo="https://lo1.in/uk/eden.png",UK| EDEN SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34170.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34170.m3u8
 #EXTINF:-1 tvg-name="UK| SKY HISTORY 2 SD" group-title="EU | UK DOCUMENTRIES" tvg-logo="https://lo1.in/uk/h2.png",UK| SKY HISTORY 2 SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34202.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34202.m3u8
 #EXTINF:-1 tvg-name="UK| NAT GEO SD" group-title="EU | UK DOCUMENTRIES" tvg-logo="https://lo1.in/uk/natwildd.png",UK| NAT GEO SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34367.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34367.m3u8
 #EXTINF:-1 tvg-name="UK| NAT GEO WILD SD" group-title="EU | UK DOCUMENTRIES" tvg-logo="https://lo1.in/uk/natgeow.png",UK| NAT GEO WILD SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34366.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34366.m3u8
 #EXTINF:-1 tvg-name="UK| PBS AMERICA SD" group-title="EU | UK DOCUMENTRIES" tvg-logo="https://lo1.in/uk/pbsusa.png",UK| PBS AMERICA SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34354.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34354.m3u8
 #EXTINF:-1 tvg-name="UK| SKY CRIME SD" group-title="EU | UK DOCUMENTRIES" tvg-logo="https://lo1.in/uk/skycr.png",UK| SKY CRIME SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34106.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34106.m3u8
 #EXTINF:-1 tvg-name="UK| SKY DOCUMENTARIES SD" group-title="EU | UK DOCUMENTRIES" tvg-logo="https://lo1.in/uk/skydoc.png",UK| SKY DOCUMENTARIES SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/33845.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/33845.m3u8
 #EXTINF:-1 tvg-name="UK| SKY HISTORY SD" group-title="EU | UK DOCUMENTRIES" tvg-logo="https://lo1.in/uk/skyhsy.png",UK| SKY HISTORY SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34394.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34394.m3u8
 #EXTINF:-1 tvg-name="UK| SKY NATURE SD" group-title="EU | UK DOCUMENTRIES" tvg-logo="https://lo1.in/uk/SKY NATURE.png",UK| SKY NATURE SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/33846.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/33846.m3u8
 #EXTINF:-1 tvg-name="UK| TRAVEL CHANNEL" group-title="EU | UK DOCUMENTRIES" tvg-logo="https://lo1.in/uk/trach.png",UK| TRAVEL CHANNEL
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/29092.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/29092.m3u8
 #EXTINF:-1 tvg-name="UK| UNIVERSAL CHANNEL" group-title="EU | UK DOCUMENTRIES" tvg-logo="https://lo1.in/uk/unich.png",UK| UNIVERSAL CHANNEL
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/50630.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/50630.m3u8
 #EXTINF:-1 tvg-name="UK| LIFETIME SD" group-title="EU | UK DOCUMENTRIES" tvg-logo="https://lo1.in/uk/lftm.png",UK| LIFETIME SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/164261.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/164261.m3u8
 #EXTINF:-1 tvg-name="UK| SMITHSONIAN SD" group-title="EU | UK DOCUMENTRIES" tvg-logo="https://lo1.in/uk/smso.png",UK| SMITHSONIAN SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/164260.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/164260.m3u8
 #EXTINF:-1 tvg-name="UK| YESTERDAY SD" group-title="EU | UK DOCUMENTRIES" tvg-logo="https://lo1.in/uk/yestr.png",UK| YESTERDAY SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34064.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34064.m3u8
 #EXTINF:-1 tvg-name="UK|  ✦●✦ KIDS SD✦●✦" group-title="EU | UK KIDS" tvg-logo="https://lo1.in/uk/flgk.png",UK|  ✦●✦ KIDS SD✦●✦
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/125805.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/125805.m3u8
 #EXTINF:-1 tvg-name="UK| BABY TV SD" group-title="EU | UK KIDS" tvg-logo="https://lo1.in/uk/bby.png",UK| BABY TV SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/33831.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/33831.m3u8
 #EXTINF:-1 tvg-name="UK| SKY KIDS SD" group-title="EU | UK KIDS" tvg-logo="https://lo1.in/uk/SKY KIDS.png",UK| SKY KIDS SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/3931.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/3931.m3u8
 #EXTINF:-1 tvg-name="UK| BOOMERANG SD" group-title="EU | UK KIDS" tvg-logo="https://lo1.in/beinn/boomerangf.png",UK| BOOMERANG SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34321.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34321.m3u8
 #EXTINF:-1 tvg-name="UK| BOOMRANG +1 SD" group-title="EU | UK KIDS" tvg-logo="https://lo1.in/beinn/boomerangf.png",UK| BOOMRANG +1 SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/33292.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/33292.m3u8
 #EXTINF:-1 tvg-name="UK| CARTOON NETWORK SD" group-title="EU | UK KIDS" tvg-logo="https://lo1.in/uk/crtn.png",UK| CARTOON NETWORK SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34319.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34319.m3u8
 #EXTINF:-1 tvg-name="UK| NICK JR SD" group-title="EU | UK KIDS" tvg-logo="https://lo1.in/uk/nicjr.png",UK| NICK JR SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34362.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34362.m3u8
 #EXTINF:-1 tvg-name="UK| NICK JR. TOO SD" group-title="EU | UK KIDS" tvg-logo="https://lo1.in/uk/nicjrt.png",UK| NICK JR. TOO SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34361.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34361.m3u8
 #EXTINF:-1 tvg-name="UK| RTE JR SD" group-title="EU | UK KIDS" tvg-logo="https://lo1.in/uk/rtej.png",UK| RTE JR SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/132744.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/132744.m3u8
 #EXTINF:-1 tvg-name="UK| NICKELODEON SD" group-title="EU | UK KIDS" tvg-logo="https://lo1.in/uk/nikdd.png",UK| NICKELODEON SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34363.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34363.m3u8
 #EXTINF:-1 tvg-name="UK| NICKTOONS SD" group-title="EU | UK KIDS" tvg-logo="https://lo1.in/uk/nictn.png",UK| NICKTOONS SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34364.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34364.m3u8
 #EXTINF:-1 tvg-name="✦●✦UK MUSIC✦●✦" group-title="EU | UK MUSIC" tvg-logo="https://lo1.in/uk/flgk.png",✦●✦UK MUSIC✦●✦
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/29094.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/29094.m3u8
 #EXTINF:-1 tvg-name="UK| MTV CLASSIC" group-title="EU | UK MUSIC" tvg-logo="https://lo1.in/uk/mtvcl.png",UK| MTV CLASSIC
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/29097.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/29097.m3u8
 #EXTINF:-1 tvg-name="UK| 4MUSIC SD" group-title="EU | UK MUSIC" tvg-logo="https://lo1.in/uk/4mu0.png",UK| 4MUSIC SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34334.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34334.m3u8
 #EXTINF:-1 tvg-name="UK| CLUBLAND TV SD" group-title="EU | UK MUSIC" tvg-logo="https://lo1.in/uk/clubl.png",UK| CLUBLAND TV SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34289.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34289.m3u8
 #EXTINF:-1 tvg-name="UK| DUNAMIS TV SD" group-title="EU | UK MUSIC" tvg-logo="https://lo1.in/uk/DUNAMIS.png",UK| DUNAMIS TV SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34137.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34137.m3u8
 #EXTINF:-1 tvg-name="UK| KERRANG! SD" group-title="EU | UK MUSIC" tvg-logo="https://lo1.in/uk/ker.png",UK| KERRANG! SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34388.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34388.m3u8
 #EXTINF:-1 tvg-name="UK| KISS SD" group-title="EU | UK MUSIC" tvg-logo="https://lo1.in/uk/KISS.png",UK| KISS SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34386.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34386.m3u8
 #EXTINF:-1 tvg-name="UK| MAGIC SD" group-title="EU | UK MUSIC" tvg-logo="https://lo1.in/uk/magic.png",UK| MAGIC SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34375.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34375.m3u8
 #EXTINF:-1 tvg-name="UK| MTV CLASSIC SD" group-title="EU | UK MUSIC" tvg-logo="https://lo1.in/uk/mtvcl.png",UK| MTV CLASSIC SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34369.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34369.m3u8
 #EXTINF:-1 tvg-name="UK| MTV BASE SD" group-title="EU | UK MUSIC" tvg-logo="https://lo1.in/uk/mtvbe.png",UK| MTV BASE SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34370.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34370.m3u8
 #EXTINF:-1 tvg-name="UK| MTV SD" group-title="EU | UK MUSIC" tvg-logo="https://lo1.in/uk/mtv.png",UK| MTV SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34374.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34374.m3u8
 #EXTINF:-1 tvg-name="UK| MTV LIVE SD" group-title="EU | UK MUSIC" tvg-logo="https://lo1.in/uk/mtvlv.png",UK| MTV LIVE SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/6675.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/6675.m3u8
 #EXTINF:-1 tvg-name="UK| NOW 70S SD" group-title="EU | UK MUSIC" tvg-logo="https://lo1.in/uk/now7.png",UK| NOW 70S SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34357.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34357.m3u8
 #EXTINF:-1 tvg-name="UK| NOW 80S SD" group-title="EU | UK MUSIC" tvg-logo="https://lo1.in/uk/now8.png",UK| NOW 80S SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34356.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34356.m3u8
 #EXTINF:-1 tvg-name="UK| NOW ROCK SD" group-title="EU | UK MUSIC" tvg-logo="https://lo1.in/uk/now9.png",UK| NOW ROCK SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/34355.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/34355.m3u8
 #EXTINF:-1 tvg-name="UK| HI-IMPACT TV SD" group-title="EU | UK MUSIC" tvg-logo="https://lo1.in/uk/hiimp.png",UK| HI-IMPACT TV SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/164257.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/164257.m3u8
 #EXTINF:-1 tvg-name="UK| TRACE URBAN SD" group-title="EU | UK MUSIC" tvg-logo="https://lo1.in/uk/TRACE URBAN.png",UK| TRACE URBAN SD
-http://xpqsfdaj.kchmzoth.com/live/KdZTxqR8/2ZZNTXG5/6553.m3u8
+http://xpqsfdaj.kchmzoth.com/live/XMQj0T91/N3A21U3/6553.m3u8
